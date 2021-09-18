@@ -1,0 +1,115 @@
+.main {
+    background-color: #e6e2da;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.overimg1{
+    position : absolute;
+    left : 50%;
+    top :50%;
+}
+
+/* Animation */
+.animate {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    line-height: 160%;
+    border-right: solid 3px #9919a3;
+    animation: animated-text 4s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;
+}
+
+
+
+/* text animation */
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 325px;
+    }
+}
+
+@media (max-width : 400px) and (min-width : 350px) {
+    .animate {
+        left : 1%;
+    }
+
+   @keyframes animated-text {
+        from {
+            width: 0;
+        }
+        to {
+            width: 350px;
+        }
+    }
+}
+
+
+@media (max-width : 350px) {
+    .animate {
+        white-space: normal;
+    }
+
+    @keyframes animated-text {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 200px;
+        }
+    }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+    from {
+        border-right-color: #9919a3;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+
+.intro {
+    text-align: justify;
+    padding: 5%;
+    position: relative;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+.particles-js {
+    position: absolute;
+    left: 0;
+    top : 0;
+    width: 100%;
+    height: 100%;
+    background-color: #efa3af;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    opacity : 0.6;
+    z-index : 999;
+}
+
+.box{
+    opacity : 0;
+}

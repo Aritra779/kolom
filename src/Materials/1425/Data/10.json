@@ -1,0 +1,16 @@
+[
+    {
+        "x": 9,
+        "y": 20,
+        "width": 45,
+        "height": 21,
+        "box": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/bLXN_AmtMfM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+    },
+    {
+        "x": 7,
+        "y": 45,
+        "width": 83,
+        "height": 5,
+        "link": "https://youtu.be/bLXN_AmtMfM"
+    }
+]

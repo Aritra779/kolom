@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+
+.contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .contain .box-con {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+        .contain .box-con .title {
+            display: flex;
+            align-items: center;
+            height: 50px;
+        }
+
+            .contain .box-con .title .block {
+                width: 0%;
+                height: inherit;
+                background: #ffb510;
+                position: absolute;
+                animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                display: flex;
+            }
+
+            .contain .box-con .title .underline {
+                width: 0%;
+                height: 20%;
+                background: #ffb510;
+                position: absolute;
+                bottom: 0;
+                animation: underline 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) 1.5s forwards;
+                display: flex;
+            }
+
+            .contain .box-con .title .text {
+                font-family: "Poppins";
+                font-size: 32px;
+                -webkit-animation: mainFadeIn 2s forwards;
+                -o-animation: mainFadeIn 2s forwards;
+                animation: mainFadeIn 2s forwards;
+                animation-delay: 1.6s;
+                opacity: 0;
+                display: flex;
+                align-items: baseline;
+                position: relative;
+            }
+
+@keyframes mainBlock {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0%;
+        left: 100%;
+    }
+}
+
+@keyframes mainFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes underline {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 40%;
+        left: 60%;
+    }
+}

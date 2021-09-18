@@ -1,0 +1,114 @@
+#Edition .card-title, #Edition .bg-img{
+    cursor : pointer;
+}
+
+#Edition .card{
+    box-shadow: 5px 5px 5px #808080 ;
+}
+#Edition .card:hover {
+    box-shadow: 10px 10px 10px #808080;
+}
+
+
+
+#Edition .bg-img {
+    margin: 1%;
+    height: 400px;
+    opacity : 0.75;
+    background-color: #ffffff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Edition .bg-img:hover{
+    opacity : 1;
+}
+
+#Edition #edtn1 .bg-img {
+    background-image: url("../../../../Materials/1424/01.jpg");
+}
+#Edition #edtn2 .bg-img {
+    background-image: url("../../../../Materials/1425/01.jpg");
+}
+#Edition #edtn3 .bg-img {
+    background-image: url("../../../../Materials/1426/01.jpg");
+}
+#Edition #edtn4 .bg-img {
+    background-image: url("../../../../Materials/1427/001.jpg");
+}
+#Edition #edtn5 .bg-img {
+    background-image: url("../../../../Materials/1427/001.jpg");
+}
+#Edition #edtn6 .bg-img {
+    background-image: url("../../../../Materials/1427/001.jpg");
+}
+
+/*
+    for options card
+*/
+.bg-color {
+    background-color: #90ba93;
+}
+
+/*
+    for page-flip
+*/
+#book{
+    padding : 10% 0 0;
+    overflow : hidden;
+}
+
+#book .flip-book {
+
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    background-image : url('../../../../Images/background.jpg');
+    display: none;
+    background-size: cover;
+}
+
+.page {
+    overflow : hidden;
+}
+
+.page .page-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.page .page-content .page-image{
+    height: 100%;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.page.--left {
+    border-right: 0;
+    box-shadow: inset -7px 0 30px -7px rgba(0, 0, 0, 0.4);
+}
+
+.page.--right {
+    border-left: 0;
+    box-shadow: inset 7px 0 30px -7px rgba(0, 0, 0, 0.4);
+}
+
+#book .navigation{
+    margin : 5% 0;
+    text-align :center;
+}
+#book .navigation button{
+    margin : 0 2%;
+}
+
+/*
+    Modal
+*/
+
+#book .modal .modal-content{
+    background-color : bisque;
+}

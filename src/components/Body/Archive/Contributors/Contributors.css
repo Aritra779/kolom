@@ -1,0 +1,39 @@
+@font-face{
+    font-family :Lipishree;
+    src : url("../../../../Materials/Fonts/Lipishree Unicode.ttf");
+}
+
+#accordion1{
+    box-shadow:5px 5px 10px #808080;
+}
+#accordion1 .background-img{
+    height : 400px;
+    background-color : #ffffff;
+    background-position : center center;
+    background-repeat : no-repeat;
+    background-size : contain;    
+}
+
+#accordion1 #collapseOne .background-img {
+    background-image: url("../../../../Materials/1424/01.jpg");
+}
+#accordion1 #collapseTwo .background-img {
+    background-image: url("../../../../Materials/1425/01.jpg");
+}
+#accordion1 #collapseThree .background-img {
+    background-image: url("../../../../Materials/1426/01.jpg");
+}
+#accordion1 #collapseFour .background-img {
+    background-image: url("../../../../Materials/1427/001.jpg");
+}
+#accordion1 #collapseFive .background-img {
+    background-image: url("../../../../Materials/1427/001.jpg");
+}
+#accordion1 #collapseSix .background-img {
+    background-image: url("../../../../Materials/1427/001.jpg");
+}
+
+
+.special-font ul li{
+    font-family : Lipishree;
+}

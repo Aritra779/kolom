@@ -1,0 +1,39 @@
+nav {
+    background: linear-gradient( -45deg, #8746b3, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.navbar {
+    box-shadow : 10px 30px 20px #e6d6d6;
+    opacity: 0.8;
+}
+
+.navbar-nav .active {
+    background-color : antiquewhite;
+    border-radius : 10px;
+}
+
+#nav-list {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.nav-item{
+    width: 100% ;
+    text-align: center;
+    padding : 3px;
+}
