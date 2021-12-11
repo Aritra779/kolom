@@ -1,11 +1,12 @@
 ﻿import './Contributors.css';
-import Effects from '../Effects/Effects';
+import Effects from '../../Effects/Effects';
 
 
 const Contributors = () => {
    
     return (
-        <div className="container len pt-5 pb-5">
+        <div id = "Contributors">
+        <div className="container pt-5 pb-5">
             <Effects
                 id="first"
                 title="Contributors"
@@ -157,25 +158,69 @@ const Contributors = () => {
                                         </div>
                                         <div className="col-md-8">
                                             <ul className="row row-cols-2 row-cols-md-2 row-cols-lg-3">
-                                                <li className="col list-group-item">Person Name</li>
-                                                <li className="col list-group-item list-group-item-primary">Person Name</li>
-                                                <li className="col list-group-item list-group-item-secondary">Person Name</li>
-                                                <li className="col list-group-item list-group-item-success">Person Name</li>
-                                                <li className="col list-group-item list-group-item-danger">Person Name</li>
-                                                <li className="col list-group-item list-group-item-warning">Person Name</li>
-                                                <li className="col list-group-item list-group-item-info">Person Name</li>
-                                                <li className="col list-group-item list-group-item-light">Person Name</li>
-                                                <li className="col list-group-item list-group-item-dark">Person Name</li>
-                                                <li className="col list-group-item">Person Name</li>
-                                                <li className="col list-group-item list-group-item-primary">Person Name</li>
-                                                <li className="col list-group-item list-group-item-secondary">Person Name</li>
-                                                <li className="col list-group-item list-group-item-success">Person Name</li>
-                                                <li className="col list-group-item list-group-item-danger">Person Name</li>
-                                                <li className="col list-group-item list-group-item-warning">Person Name</li>
-                                                <li className="col list-group-item list-group-item-info">Person Name</li>
-                                                <li className="col list-group-item list-group-item-light">Person Name</li>
-                                                <li className="col list-group-item list-group-item-dark">Person Name</li>
-                                                <li className="col list-group-item list-group-item-dark">Person Name</li>
+                                                <li className="col list-group-item">অপর্ণা ঘোষ</li>
+                                                <li className="col list-group-item list-group-item-primary">প্রমথেশ ভূইয়া</li>
+                                                <li className="col list-group-item list-group-item-secondary">নিরবেদ</li>
+                                                <li className="col list-group-item list-group-item-success">ঋভুব্রত পাল</li>
+                                                <li className="col list-group-item list-group-item-danger">প্রজ্ঞা</li>
+                                                <li className="col list-group-item list-group-item-warning">শিবতোষ মৃধা</li>
+                                                <li className="col list-group-item list-group-item-info">কুসুম</li>
+                                                <li className="col list-group-item list-group-item-light">সমন্বয়</li>
+                                                <li className="col list-group-item list-group-item-dark">স্মৃতি বেগ বিশ্বাস</li>
+                                                <li className="col list-group-item">অনির্বাণ মান্না</li>
+                                                <li className="col list-group-item list-group-item-primary">মৌসুমী সেন চক্রবর্তী</li>
+                                                <li className="col list-group-item list-group-item-secondary">সৃজা সর্দার</li>
+                                                <li className="col list-group-item list-group-item-success">দীপঙ্কর ঘোষ</li>
+                                                <li className="col list-group-item list-group-item-danger">প্রীতম দাস</li>
+                                                <li className="col list-group-item list-group-item-warning">সোহান ঘোষ</li>
+                                                <li className="col list-group-item list-group-item-info">মহুয়া চক্রবর্তী</li>
+                                                <li className="col list-group-item list-group-item-light">প্রতীক মণ্ডল</li>
+                                                <li className="col list-group-item list-group-item-dark">কৌশিকী ভট্টাচার্য</li>
+                                                <li className="col list-group-item list-group-item-dark">হিন্দোল সরকার</li>
+                                                <li className="col list-group-item">আহেলী দে</li>
+                                                <li className="col list-group-item list-group-item-primary">নির্মাল্য সেনগুপ্ত</li>
+                                                <li className="col list-group-item list-group-item-secondary">অরিত্র দত্ত</li>
+                                                <li className="col list-group-item list-group-item-success">বিপাশা দাস</li>
+                                                <li className="col list-group-item list-group-item-danger">রিতা ঘোষাল</li>
+                                                <li className="col list-group-item list-group-item-warning">আকাশ মুখার্জী</li>
+                                                <li className="col list-group-item list-group-item-info">দেবার্ঘ্য কুমার চক্রবর্তী</li>
+                                                <li className="col list-group-item list-group-item-light">পসায়ক চক্রবর্তী</li>
+                                                <li className="col list-group-item list-group-item-dark">সায়নদীপ মণ্ডল</li>
+                                                <li className="col list-group-item list-group-item-dark">শুভম সরকার</li>
+                                                <li className="col list-group-item">সৌরভ সরকার </li>
+                                                <li className="col list-group-item list-group-item-primary">সৌরিন দাস</li>
+                                                <li className="col list-group-item list-group-item-secondary">বসুন্ধরা হালদার</li>
+                                                <li className="col list-group-item list-group-item-success">স্বাগত দাস</li>
+                                                <li className="col list-group-item list-group-item-danger">নৈরিক</li>
+                                                <li className="col list-group-item list-group-item-warning">দেবস্মিতা সেনগুপ্ত</li>
+                                                <li className="col list-group-item list-group-item-info">নিলোফার আলি শা</li>
+                                                <li className="col list-group-item list-group-item-light">অঙ্কিতা আলি</li>
+                                                <li className="col list-group-item list-group-item-dark">প্রাঞ্জল রয়</li>
+                                                <li className="col list-group-item list-group-item-dark">পায়েল দাস</li>
+                                                <li className="col list-group-item">দীপতাংশু পাল</li>
+                                                <li className="col list-group-item list-group-item-primary">সৃজিতা চক্রবর্তী</li>
+                                                <li className="col list-group-item list-group-item-secondary">সুশোভনা ঘোষ</li>
+                                                <li className="col list-group-item list-group-item-success">সুমন মৈত্র</li>
+                                                <li className="col list-group-item list-group-item-danger">চয়নিকা মণ্ডল</li>
+                                                <li className="col list-group-item list-group-item-warning">সুরঞ্জনা দেবনাথ</li>
+                                                <li className="col list-group-item list-group-item-info">অরুনিমা চৌধুরী</li>
+                                                <li className="col list-group-item list-group-item-light">জেবা নাসরিন</li>
+                                                <li className="col list-group-item list-group-item-dark">এঞ্জন চক্রবর্তী</li>
+                                                <li className="col list-group-item list-group-item-dark">দীপ শেখর চক্রবর্তী</li>
+                                                <li className="col list-group-item">সেবন্তী ভট্টাচার্য</li>
+                                                <li className="col list-group-item list-group-item-primary">অনিন্দিতা মৃধা</li>
+                                                <li className="col list-group-item list-group-item-secondary">খরস্রতা </li>
+                                                <li className="col list-group-item list-group-item-success">প্রণব কুমার কর</li>
+                                                <li className="col list-group-item list-group-item-danger">আগমনী মণ্ডল</li>
+                                                <li className="col list-group-item list-group-item-warning">দীপ নন্দী</li>
+                                                <li className="col list-group-item list-group-item-info">কণিকা সরকার</li>
+                                                <li className="col list-group-item list-group-item-light">সায়ক চক্রবর্তী</li>
+                                                <li className="col list-group-item list-group-item-dark">পার্থপ্রতিম রায়</li>
+                                                <li className="col list-group-item list-group-item-dark">অরিত্র পান্ডা</li>
+                                                <li className="col list-group-item">শিপ্রা অধিকারী</li>
+                                                <li className="col list-group-item list-group-item-primary">সহস্রাব্দী ব্যানার্জী </li>
+                                                <li className="col list-group-item list-group-item-secondary">রূপম মাল্ </li>
+                                                <li className="col list-group-item list-group-item-success">শুভব্রত সামন্ত</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -199,25 +244,27 @@ const Contributors = () => {
                                         </div>
                                         <div className="col-md-8">
                                             <ul className="row row-cols-2 row-cols-md-2 row-cols-lg-3">
-                                                <li className="col list-group-item">Person Name</li>
-                                                <li className="col list-group-item list-group-item-primary">Person Name</li>
-                                                <li className="col list-group-item list-group-item-secondary">Person Name</li>
-                                                <li className="col list-group-item list-group-item-success">Person Name</li>
-                                                <li className="col list-group-item list-group-item-danger">Person Name</li>
-                                                <li className="col list-group-item list-group-item-warning">Person Name</li>
-                                                <li className="col list-group-item list-group-item-info">Person Name</li>
-                                                <li className="col list-group-item list-group-item-light">Person Name</li>
-                                                <li className="col list-group-item list-group-item-dark">Person Name</li>
-                                                <li className="col list-group-item">Person Name</li>
-                                                <li className="col list-group-item list-group-item-primary">Person Name</li>
-                                                <li className="col list-group-item list-group-item-secondary">Person Name</li>
-                                                <li className="col list-group-item list-group-item-success">Person Name</li>
-                                                <li className="col list-group-item list-group-item-danger">Person Name</li>
-                                                <li className="col list-group-item list-group-item-warning">Person Name</li>
-                                                <li className="col list-group-item list-group-item-info">Person Name</li>
-                                                <li className="col list-group-item list-group-item-light">Person Name</li>
-                                                <li className="col list-group-item list-group-item-dark">Person Name</li>
-                                                <li className="col list-group-item list-group-item-dark">Person Name</li>
+                                                <li className="col list-group-item">শিঞ্জিত</li>
+                                                <li className="col list-group-item list-group-item-primary">কৌশিকী ভট্টাচার্য্</li>
+                                                <li className="col list-group-item list-group-item-secondary">মহ: জাহিদ আখতার খান</li>
+                                                <li className="col list-group-item list-group-item-success">আসাদ মল্লিক</li>
+                                                <li className="col list-group-item list-group-item-danger">সুশোভন ঘোষ</li>
+                                                <li className="col list-group-item list-group-item-warning">রিমা শিকদার</li>
+                                                <li className="col list-group-item list-group-item-info">সৌম্যদেব</li>
+                                                <li className="col list-group-item list-group-item-light">অরিত্র (Erick c.)</li>
+                                                <li className="col list-group-item list-group-item-dark">পার্থ প্রতীম রায়</li>
+                                                <li className="col list-group-item">প্রমথেশ ভূইয়া</li>
+                                                <li className="col list-group-item list-group-item-primary">হিন্দোল</li>
+                                                <li className="col list-group-item list-group-item-secondary">নির্বেদ</li>
+                                                <li className="col list-group-item list-group-item-success">সমন্বয়</li>
+                                                <li className="col list-group-item list-group-item-danger">সায়ন সরকার</li>
+                                                <li className="col list-group-item list-group-item-warning">সোহিনী সরকার</li>
+                                                <li className="col list-group-item list-group-item-info">মৌসুমী চক্রবর্তী</li>
+                                                <li className="col list-group-item list-group-item-light">সৌম্যদীপ কুণ্ডূ</li>
+                                                <li className="col list-group-item list-group-item-dark">আত্রেয়ী হালদার</li>
+                                                <li className="col list-group-item list-group-item-dark">ঈপ্সিতা</li>
+                                                <li className="col list-group-item">অনিশা ঘোষ</li>
+                                                <li className="col list-group-item list-group-item-primary">অনুপম তরফদার</li>   
                                             </ul>
                                         </div>
                                     </div>
@@ -241,25 +288,32 @@ const Contributors = () => {
                                         </div>
                                         <div className="col-md-8">
                                             <ul className="row row-cols-2 row-cols-md-2 row-cols-lg-3">
-                                                <li className="col list-group-item">Person Name</li>
-                                                <li className="col list-group-item list-group-item-primary">Person Name</li>
-                                                <li className="col list-group-item list-group-item-secondary">Person Name</li>
-                                                <li className="col list-group-item list-group-item-success">Person Name</li>
-                                                <li className="col list-group-item list-group-item-danger">Person Name</li>
-                                                <li className="col list-group-item list-group-item-warning">Person Name</li>
-                                                <li className="col list-group-item list-group-item-info">Person Name</li>
-                                                <li className="col list-group-item list-group-item-light">Person Name</li>
-                                                <li className="col list-group-item list-group-item-dark">Person Name</li>
-                                                <li className="col list-group-item">Person Name</li>
-                                                <li className="col list-group-item list-group-item-primary">Person Name</li>
-                                                <li className="col list-group-item list-group-item-secondary">Person Name</li>
-                                                <li className="col list-group-item list-group-item-success">Person Name</li>
-                                                <li className="col list-group-item list-group-item-danger">Person Name</li>
-                                                <li className="col list-group-item list-group-item-warning">Person Name</li>
-                                                <li className="col list-group-item list-group-item-info">Person Name</li>
-                                                <li className="col list-group-item list-group-item-light">Person Name</li>
-                                                <li className="col list-group-item list-group-item-dark">Person Name</li>
-                                                <li className="col list-group-item list-group-item-dark">Person Name</li>
+                                                <li className="col list-group-item">আরণ্যক বসু</li>
+                                                <li className="col list-group-item list-group-item-primary">ময়ূখ চৌধুরী</li>
+                                                <li className="col list-group-item list-group-item-secondary">মৌসুমী সেন চক্রবর্তী</li>
+                                                <li className="col list-group-item list-group-item-success">দীপ শেখর চক্রবর্তী</li>
+                                                <li className="col list-group-item list-group-item-danger">সমন্বয়</li>
+                                                <li className="col list-group-item list-group-item-warning">নন্দিতা সাহা</li>
+                                                <li className="col list-group-item list-group-item-info">সাকিব প্রধান অনিক</li>
+                                                <li className="col list-group-item list-group-item-light">দিয়া মুখার্জী</li>
+                                                <li className="col list-group-item list-group-item-dark">ঈপ্সিতা</li>
+                                                <li className="col list-group-item">দেবার্ঘ্য কুমার চক্রবর্তী</li>
+                                                <li className="col list-group-item list-group-item-primary">ইমরান আলি</li>
+                                                <li className="col list-group-item list-group-item-secondary">হিন্দোল</li>
+                                                <li className="col list-group-item list-group-item-success">রিতা ঘোষাল</li>
+                                                <li className="col list-group-item list-group-item-danger">শুভ্র শেখর হালদার</li>
+                                                <li className="col list-group-item list-group-item-warning">আকাশ মুখার্জী</li>
+                                                <li className="col list-group-item list-group-item-info">আকাশদীপ বেরা</li>
+                                                <li className="col list-group-item list-group-item-light">জিয়াউল হক</li>
+                                                <li className="col list-group-item list-group-item-dark">সায়ক চক্রবর্তী</li>
+                                                    <li className="col list-group-item list-group-item-dark">ইদ্রাণী জানা </li>
+                                                    <li className="col list-group-item">অরিত্র দত্ত</li>
+                                                    <li className="col list-group-item list-group-item-primary">সৌরভ সরকার</li>
+                                                    <li className="col list-group-item list-group-item-secondary">মহুয়া সরকার</li>
+                                                    <li className="col list-group-item list-group-item-success">নির্বেদ</li>
+                                                    <li className="col list-group-item list-group-item-danger">দেবাঞ্জন ঘোষ</li>
+                                                    <li className="col list-group-item list-group-item-warning">রূপকল্প ভট্টাচার্য্য</li>
+                                                    <li className="col list-group-item list-group-item-info">সঞ্চিতা মহান্তি</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -267,6 +321,7 @@ const Contributors = () => {
                             </div>
                         </div>
                     </div>
+            </div>
             </div>
             </div>
         </div>

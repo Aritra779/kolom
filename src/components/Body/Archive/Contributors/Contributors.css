@@ -1,6 +1,5 @@
-@font-face{
-    font-family :Lipishree;
-    src : url("../../../../Materials/Fonts/Lipishree Unicode.ttf");
+#Contributors {
+    background-image: linear-gradient(to top, #b5c4c7 0%, #9ad1c4 100%);
 }
 
 #accordion1{
@@ -27,10 +26,10 @@
     background-image: url("../../../../Materials/1427/001.jpg");
 }
 #accordion1 #collapseFive .background-img {
-    background-image: url("../../../../Materials/1427/001.jpg");
+    background-image: url("../../../../Materials/1428/01.jpg");
 }
 #accordion1 #collapseSix .background-img {
-    background-image: url("../../../../Materials/1427/001.jpg");
+    background-image: url("../../../../Materials/1428_oct/001.jpg");
 }
 
 

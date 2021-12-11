@@ -1,6 +1,6 @@
 import HTMLFlipBook from 'react-pageflip';
 import { forwardRef, useRef, useState } from 'react';
-import Effects from '../Effects/Effects';
+import Effects from '../../Effects/Effects';
 
 const turn = (e, book , page) => {
     e.preventDefault();
@@ -129,18 +129,17 @@ const FlipBook = ({ content }) => {
         case 4: images = importAllImages(require.context('../../../../Materials/1427', false, /\.jpg/));
             data = importAllData(require.context('../../../../Materials/1427/Data', false, /\.json/));
             break;
-        case 5: images = importAllImages(require.context('../../../../Materials/1427', false, /\.jpg/));
-            data = importAllData(require.context('../../../../Materials/1427/Data', false, /\.json/));
+        case 5: images = importAllImages(require.context('../../../../Materials/1428', false, /\.jpg/));
+            data = importAllData(require.context('../../../../Materials/1428/Data', false, /\.json/));
             break;
-        case 6: images = importAllImages(require.context('../../../../Materials/1427', false, /\.jpg/));
-            data = importAllData(require.context('../../../../Materials/1427/Data', false, /\.json/));
+        case 6: images = importAllImages(require.context('../../../../Materials/1428_oct', false, /\.jpg/));
+            data = importAllData(require.context('../../../../Materials/1428_oct/Data', false, /\.json/));
             break;
         default: break;
     }
     if ((Object.keys(images).length) % 2 !== 0) {
         images[`${Object.keys(images).length + 1}.`] = images[Object.keys(images)[Object.keys(images).length - 1]];
     }
-
     const onFlip = (e) => {
         setPage(e.data);
     }
@@ -213,11 +212,9 @@ const FlipBook = ({ content }) => {
                     }
                 </HTMLFlipBook>
                 <div className="navigation row">
-
                     <span className="col-sm-4 g-2"><button className="btn btn-outline-success" type="button" onClick={prevButtonClick}>Previous Page</button></span>
                     <span className="col-sm-4 g-2">[<span>{page + 1}</span> of <span>{totalPage}</span>]</span>
                     <span className="col-sm-4 g-2"><button className="btn btn-outline-success" type="button" onClick={nextButtonClick}>Next Page</button></span>
-
                 </div>
                
                 <div className="modal fade" id="Modal" tabIndex="-1" aria-labelledby="ModalLabel" aria-hidden="true">

@@ -1,6 +1,6 @@
 ﻿import { useRef, useState } from 'react';
 import './Editions.css';
-import Effects from '../Effects/Effects';
+import Effects from '../../Effects/Effects';
 import Options from './Options';
 
 const dates = ["September 2017" , "October 2018" , "October 2019","October 2020" , "May 2021" , "October 2021"];
@@ -25,7 +25,8 @@ const Editions = () => {
     }
 
     return (
-        <div className="container len pt-5 pb-5">
+        <div id = "Editions">
+        <div className="container pt-5 pb-5">
             <Effects
                 id="second"
                 title="Past Editions"
@@ -58,7 +59,8 @@ const Editions = () => {
             ""  
                 }
             </div>
-        </div>
+            </div>
+            </div>
     );
 }
 

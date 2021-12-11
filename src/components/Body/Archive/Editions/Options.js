@@ -1,5 +1,5 @@
 import { useState, useImperativeHandle, forwardRef} from 'react';
-import Effects from '../Effects/Effects';
+import Effects from '../../Effects/Effects';
 import SwiperBook from './SwiperBook';
 import FlipBook from './FlipBook';
 
@@ -8,8 +8,8 @@ const links = [
     "https://drive.google.com/file/d/18BqjcgzhnkoaG8Jka7kLQchww2UozThl/view?usp=sharing",
     "https://drive.google.com/file/d/1juPtOWirk5liS2Y1mebVjE0nA9YhcLAv/view?usp=sharing",
     "https://drive.google.com/file/d/1-DF7snfgtztXM6IadKoBxVFuY2oUhEjb/view?usp=sharing",
-    "https://drive.google.com/file/d/1-DF7snfgtztXM6IadKoBxVFuY2oUhEjb/view?usp=sharing",
-    "https://drive.google.com/file/d/1-DF7snfgtztXM6IadKoBxVFuY2oUhEjb/view?usp=sharing"
+    "https://drive.google.com/file/d/1-Mwum1eQJ2WU4UWSDDCTDShpQQggVkqn/view?usp=sharing",
+    "https://drive.google.com/file/d/1q3DGIg8ORUEvxJsgmBHBJ_JtcLhqYCPw/view?usp=sharing"
 ];
 
 const Options = forwardRef(({content},ref) => {

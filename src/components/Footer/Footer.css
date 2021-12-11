@@ -1,3 +1,111 @@
-.footer {
-    color: white;
+footer .left, footer .right {
+    width: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+footer .left {
+    color: pink;
+    transform: skew(0deg, -10deg);
+}
+
+footer .right {
+    color: #73d764;
+    transform: skew(0deg, 10deg);
+}
+
+footer .left .content {
+    width: 200%;
+    text-align: center;
+    
+}
+
+footer .right .content {
+    width: 200%;
+    text-align: center;
+    transform : translate(-50%);
+}
+
+footer #control span {
+    display : inline-block;
+    font-family : 'Lipishree Unicode';
+    font-size: 2em;
+    transition: ease-out 2s;
+}
+
+@media (max-width: 250px){
+    footer #control span{
+        font-size : 1.5rem;
+    }
+}
+
+footer .info{
+    font-family : 'Agency FB';
+    color : white;
+}
+footer .info span{
+    margin-right :3%;
+}
+
+footer .info a{
+    color : inherit;
+}
+footer .info div a{
+    font-size : 1.2rem;
+    text-decoration : none;
+}
+
+footer .creator {
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans';
+    overflow: hidden;
+}
+
+footer .creator > span {
+    text-align : center;
+    font-size : 1.1em;
+    display : block;
+    color : white;
+}
+
+footer .creator div {
+    text-align : center;
+}
+
+    footer .creator div h1 {
+        display : inline-block;
+        margin: 0px;
+        color: #fff;
+        font-weight: 100;
+        font-size: 2em;
+        cursor : pointer;
+    }
+        footer .creator div h1 span {
+            display : inline-block;
+            opacity : 0;
+            color: #fe3a7d;
+            transition: linear 0.8s 0.5s;
+        }
+
+        footer .creator div h1 .stay{
+            opacity : 1!important;
+            color : white!important;
+        }
+        footer .creator div h1 #MoveLeft{
+            transform : translate(200%);
+        }
+
+footer .description {
+    display : none;
+    text-align : justify;
+    color : white;
+    transition: linear 0.8s 0.5s;
+}
+
+footer .copyright{
+    font-size : 1.5em;
+    font-family : 'Lipishree Unicode';
+    text-align : center;
+    color : aqua;
 }

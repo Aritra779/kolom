@@ -2,7 +2,8 @@ import img1 from '../../../../Materials/1424/01.jpg';
 import img2 from '../../../../Materials/1425/01.jpg';
 import img3 from '../../../../Materials/1426/01.jpg';
 import img4 from '../../../../Materials/1427/001.jpg';
-import img5 from '../../../../Materials/1426/30.jpg';
+import img5 from '../../../../Materials/1428/01.jpg';
+import img6 from '../../../../Materials/1428_oct/001.jpg';
 import 'swiper/swiper-bundle.min.css'
 
 // swiper core styles
@@ -56,7 +57,6 @@ const Carousel = () => {
                     "spaceBetween": 100
                 }
             }}
-            className="mySwiper"
             >
             <SwiperSlide>
                 {/*<!-- Required swiper-lazy class and image source specified in data-src attribute -->*/}
@@ -85,22 +85,7 @@ const Carousel = () => {
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide><SwiperSlide>
                 {/*<!-- Required swiper-lazy class and image source specified in data-src attribute -->*/}
-                <img data-src={img1} className="swiper-lazy"/>
-                {/*<!-- Preloader image -->*/}
-                <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-            </SwiperSlide><SwiperSlide>
-                {/*<!-- Required swiper-lazy class and image source specified in data-src attribute -->*/}
-                <img data-src={img2} className="swiper-lazy"/>
-                {/*<!-- Preloader image -->*/}
-                <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-            </SwiperSlide><SwiperSlide>
-                {/*<!-- Required swiper-lazy class and image source specified in data-src attribute -->*/}
-                <img data-src={ img3} className="swiper-lazy"/>
-                {/*<!-- Preloader image -->*/}
-                <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-            </SwiperSlide><SwiperSlide>
-                {/*<!-- Required swiper-lazy class and image source specified in data-src attribute -->*/}
-                <img data-src="https://swiperjs.com/demos/images/nature-9.jpg" className="swiper-lazy"/>
+                <img data-src={img6} className="swiper-lazy"/>
                 {/*<!-- Preloader image -->*/}
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide>

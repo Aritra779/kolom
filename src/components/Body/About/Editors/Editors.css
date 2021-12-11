@@ -1,0 +1,139 @@
+#Editors {
+    background-image: linear-gradient(to top, #dbe0ba 0%, #1d2140 100%);
+}
+#Editors .col{
+    overflow : hidden;
+}
+
+#Editors .card{
+    height : 400px;
+}
+    #Editors .card .bg-img {
+        height: 400px;
+        background-color: #ffffff;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #Editors #E1 {
+        background-image: url("../../../../Images/Team/deb.jpg");
+    }
+    #Editors #E2 {
+        background-image: url("../../../../Images/Team/aritra.jpg");
+    }
+    #Editors #E3 {
+        background-image: url("../../../../Images/Team/sohan.jpg");
+    }
+    #Editors #E4 {
+        background-image: url("../../../../Images/Team/sayak.jpg");
+    }
+    #Editors #E5 {
+        background-image: url("../../../../Images/Team/ipshita.jpg");
+    }
+    #Editors #E6 {
+        background-image: url("../../../../Images/Team/swapnanil.jpg");
+    }
+    #Editors #E7 {
+        background-image: url("../../../../Images/Team/atreyee.jpg");
+    }
+    #Editors #E8 {
+        background-image: url("../../../../Images/Team/rajarshi.jpg");
+    }
+    #Editors #E9 {
+        background-image: url("../../../../Images/Team/aritra.jpg");
+    }
+
+#Editors .card:hover{
+    border : 0px;
+    border-radius : 0 20%;
+}
+#Editors .card-title {
+    font-family: 'Comfortaa', cursive;
+}
+
+#Editors .card:hover .card-title {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+#Editors .card h6{
+    opacity : 0;
+}
+
+#Editors .card:hover h6{
+    opacity : 1;
+}
+
+#Editors .card:hover {
+        overflow: hidden;
+    }
+
+#Editors .card .card-text {
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    background-color: rgba(43,47,73, 0.65);
+    opacity: 0;
+    color: antiquewhite;
+}
+
+#Editors .card .card-text .row{
+    margin-top : 5%;
+}
+
+@media (max-width : 320px) {
+    #Editors .card .card-title, #Editors .card .card-text, #Editors .card h6{
+    font-size:0.7em;
+    }
+    #Editors .card .card-text .row {
+        margin-top: 1%;
+    }
+}
+
+@media (max-width : 250px) {
+    #Editors .card .card-title, #Editors .card .card-text, #Editors .card h6 {
+        font-size: 0.5em;
+    }
+}
+
+
+@media (max-width : 400px) {
+    #special .card-title, #special h6 {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width : 1000px) {
+    #special .card-text{
+        font-size: 0.8em;
+    }
+}
+
+#Editors .card:hover .card-text {
+    list-style: none;
+    opacity: 1;
+   transform : translateY(-60%);
+   transition : 0.5s all ease-in;
+}
+
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}

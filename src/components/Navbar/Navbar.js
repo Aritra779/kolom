@@ -18,6 +18,7 @@ const Navbar = () => {
     
     const handleClick = (index) => {
         setActiveIdx(index);
+        window.scrollTo(0,0);
     }
 
     /*useEffect(() => {

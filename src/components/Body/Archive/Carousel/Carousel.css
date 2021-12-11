@@ -52,11 +52,3 @@
     object-fit: contain;
 }
 
-.mySwiper{
-    opacity : 0.8;
-}
-
-.mySwiper:hover {
-    opacity :1;
-}
-

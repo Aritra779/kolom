@@ -1,3 +1,8 @@
+#Editions {
+    background-image: linear-gradient(to top, #c7bdca 0%, #b5c4c7 100%);
+}
+
+
 #Edition .card-title, #Edition .bg-img{
     cursor : pointer;
 }
@@ -38,10 +43,10 @@
     background-image: url("../../../../Materials/1427/001.jpg");
 }
 #Edition #edtn5 .bg-img {
-    background-image: url("../../../../Materials/1427/001.jpg");
+    background-image: url("../../../../Materials/1428/01.jpg");
 }
 #Edition #edtn6 .bg-img {
-    background-image: url("../../../../Materials/1427/001.jpg");
+    background-image: url("../../../../Materials/1428_oct/001.jpg");
 }
 
 /*

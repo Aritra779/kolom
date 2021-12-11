@@ -1,4 +1,4 @@
-import Effects from '../Effects/Effects';
+import Effects from '../../Effects/Effects';
 // swiper core styles
 import 'swiper/swiper.min.css'
 
@@ -33,9 +33,9 @@ const SwiperBook = ({ content }) => {
             break;
         case 4: images = importAll(require.context('../../../../Materials/1427', false, /\.jpg/));
             break;
-        case 5: images = importAll(require.context('../../../../Materials/1427', false, /\.jpg/));
+        case 5: images = importAll(require.context('../../../../Materials/1428', false, /\.jpg/));
             break;
-        case 6: images = importAll(require.context('../../../../Materials/1427', false, /\.jpg/));
+        case 6: images = importAll(require.context('../../../../Materials/1428_oct', false, /\.jpg/));
             break;
         default: break;
     }

@@ -1,0 +1,156 @@
+#Pen {
+    background-image: linear-gradient(to top, #d3e8e1 0%, #dbe0ba 100%);
+}
+
+#Pen .wrap{
+    width : 100%;
+    position : relative;
+    height : 500px;
+}
+
+#Pen .box {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:85%;
+    height: 400px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+#Pen .box:before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     border-top: 1em solid #b71540;
+     border-left: 1em solid #b71540;
+     
+}
+
+#Pen .reverse .box:before {
+    z-index: 2;
+}
+     
+#Pen .box:after {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     border-bottom: 1em solid #b71540;
+     border-right: 1em solid #b71540;
+}
+
+#Pen .reverse .box:after {
+    z-index : -1;
+}
+
+#Pen .box .fas {
+    font-size: 1.8em;
+    height: 15%;
+    width: 15%;
+    line-height: 50px !important;
+    background-color: #b71540;
+    color: #d3e8e1;
+}
+
+#Pen .box .fa2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#Pen .box .text {
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    width: 115%;
+    height: 80%;
+    background-color: rgba(44, 58, 71 , 0.75);
+    border-radius: 20px;
+    transition: 0.5s;
+
+}
+
+#Pen .reverse .box .text{
+    left : -5%;
+}
+
+#Pen .box .text .fa1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#Pen .reverse .box .fa1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index : 2;
+}
+
+#Pen .box .text .overflow-control {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+    -ms-overflow-style: none;
+}
+#Pen .reverse .box .overflow-control {
+    height : 70%;
+}
+
+#Pen .box .text  .overflow-control::-webkit-scrollbar {
+    display: none;
+}
+
+.comm {
+    
+}
+#Pen .box .text .quote {
+    text-align: center;
+    width: 100%;
+    padding: 3% 10% 0 5%;
+    line-height: 1.5;
+
+}
+
+#Pen .reverse .box .text .quote{
+    padding : 3% 5% 0 10%;
+}
+
+#Pen .box .text h3 {
+    padding : 3% 3% 1%;
+    margin : 0;
+    font-family: 'Lipishree Unicode';
+}
+
+#Pen .box .text div p {
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+#Pen .box:hover {
+    transform: translate(-50%, -50%) rotateY(-20deg) skewY(3deg);
+}
+
+#Pen .reverse .box:hover {
+    transform: translate(-50%, -50%) rotateY(20deg) skewY(-3deg);
+}
+
+#Pen .box:hover .text {
+    transform: rotateY(20deg) skewY(-3deg);
+}
+
+#Pen .reverse .box:hover .text {
+    transform: rotateY(-20deg) skewY(3deg);
+}

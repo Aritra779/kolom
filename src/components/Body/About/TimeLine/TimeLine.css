@@ -1,0 +1,81 @@
+#TimeLine {
+    overflow: hidden;
+    background-image: linear-gradient(to top, #1d2140 0%, #e4e5ed 100%);
+    border-bottom: 5px double #d02368;
+}
+
+#TimeLine .background-img {
+    height: 300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#TimeLine #One .background-img {
+    background-image: url("../../../../Materials/1424/01.jpg");
+}
+
+#TimeLine #Two .background-img {
+    background-image: url("../../../../Materials/1425/01.jpg");
+}
+
+#TimeLine #Three .background-img {
+    background-image: url("../../../../Materials/1426/01.jpg");
+}
+
+#TimeLine #Four .background-img {
+    background-image: url("../../../../Materials/1427/001.jpg");
+}
+
+#TimeLine #Five .background-img {
+    background-image: url("../../../../Materials/1428/01.jpg");
+}
+
+#TimeLine #Six .background-img {
+    background-image: url("../../../../Materials/1428_oct/001.jpg");
+}
+
+#TimeLine .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#TimeLine .vertical-timeline-element--mag1 .vertical-timeline-element-content{
+    border-top : #0094ff solid;
+}
+#TimeLine .vertical-timeline-element--mag2 .vertical-timeline-element-content {
+    border-top:#d02368 solid;
+}
+
+#TimeLine .vertical-timeline-element--mag1 .vertical-timeline-element-content {
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+
+#TimeLine .vertical-timeline-element--mag2 .vertical-timeline-element-content {
+    background-image: linear-gradient(to top, #eb9bcc 0%, #edd8e5 100%);
+}
+
+#TimeLine .wave {
+    width: 1000px;
+    height: 1020px;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    border-radius: 35%;
+    opacity :  0.5;
+    background: rgba(255, 255, 255, .75);
+    animation: wave 9s infinite linear;
+}
+@keyframes wave {
+    from {
+        transform: rotate(0deg);
+    }
+
+    from {
+        transform: rotate(360deg);
+    }
+}
