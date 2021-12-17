@@ -10,7 +10,7 @@ const ShortAbout = () => {
 					color = "white"
 				/>
 			</div>
-			<div className="row row-cols-2 row-cols-lg-3 g-5">
+			<div className="row row-cols-sm-2 row-cols-lg-3 g-5">
 				<div className="col">
 					<div className = "list h-100" id = "frst">
 						<h2>06</h2>

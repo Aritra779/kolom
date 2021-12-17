@@ -60,32 +60,32 @@ const Carousel = () => {
             >
             <SwiperSlide>
                 {/*<!-- Required swiper-lazy class and image source specified in data-src attribute -->*/}
-                <img data-src={ img1} className="swiper-lazy"/>
+                <img data-src={ img1} className="swiper-lazy" alt = "1424_Edition"/>
                 {/*<!-- Preloader image -->*/}
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide><SwiperSlide>
                 {/*<!-- Required swiper-lazy class and image source specified in data-src attribute -->*/}
-                <img data-src={img2} className="swiper-lazy"/>
+                <img data-src={img2} className="swiper-lazy" alt = "1425_Edition"/>
                 {/*<!-- Preloader image -->*/}
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide><SwiperSlide>
                 {/*<!-- Required swiper-lazy class and image source specified in data-src attribute -->*/}
-                <img data-src={ img3} className="swiper-lazy"/>
+                <img data-src={ img3} className="swiper-lazy" alt = "1426_Edition"/>
                 {/*<!-- Preloader image -->*/}
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide><SwiperSlide>
                 {/*<!-- Required swiper-lazy class and image source specified in data-src attribute -->*/}
-                <img data-src={img4} className= "swiper-lazy"/>
+                <img data-src={img4} className= "swiper-lazy" alt = "1427_Edition"/>
                 {/*<!-- Preloader image -->*/}
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide><SwiperSlide>
                 {/*<!-- Required swiper-lazy class and image source specified in data-src attribute -->*/}
-                <img data-src={img5} className="swiper-lazy"/>
+                <img data-src={img5} className="swiper-lazy" alt = "1428_may_Edition"/>
                 {/*<!-- Preloader image -->*/}
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide><SwiperSlide>
                 {/*<!-- Required swiper-lazy class and image source specified in data-src attribute -->*/}
-                <img data-src={img6} className="swiper-lazy"/>
+                <img data-src={img6} className="swiper-lazy" alt="1428_oct_Edition"/>
                 {/*<!-- Preloader image -->*/}
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
             </SwiperSlide>

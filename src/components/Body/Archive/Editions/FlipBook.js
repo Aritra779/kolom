@@ -9,7 +9,6 @@ const turn = (e, book , page) => {
 
 const open = (content) => {
     let modal = document.getElementById('Modal');
-    let external;
     if (modal) {
         modal = modal.childNodes[0].childNodes[0].childNodes[1];
     }
@@ -23,17 +22,17 @@ const Page = forwardRef((props, ref) => {
     return (
         <div className="page" ref={ref}>
             <div className="page-content">
-                <img className="page-image" src={props.img}/>
+                <img className="page-image" src={props.img} alt = "page_of_book"/>
                 <div>
                     {props.data && props.data.map(item => {
                         if (item.page) {
                             return (
-                                <a
+                                <button
                                     key={props.data.indexOf(item)}
                                     onClick={(e) => turn(e, props.book, item.page)}
-                                    href="#"
                                     style=
                                     {{
+                                        border : '0px',
                                         position: 'absolute',
                                         height: `${item.height}%`,
                                         width: `${item.width}%`,
@@ -51,6 +50,7 @@ const Page = forwardRef((props, ref) => {
                                     key={props.data.indexOf(item)}
                                     href={item.link}
                                     target="_blank"
+                                    rel = "noreferrer"
                                     style=
                                     {{
                                         position: 'absolute',
@@ -61,10 +61,10 @@ const Page = forwardRef((props, ref) => {
                                         backgroundColor: `rgba(178, 194, 219,0.5)`,
                                         borderRadius: '10px'
                                     }}
-                                />
+                                > </a>
                             );
                         }
-                        else if (item.box) {
+                        else {
                             return (
                                 <button
                                     key={props.data.indexOf(item)}
@@ -96,17 +96,17 @@ const Page = forwardRef((props, ref) => {
 
 const importAllImages = (r) => {
     let images = {};
-    r.keys().map(item => {
-        images[item.replace('./', '').replace('jpg','')] = r(item);
-    });
+    for (let item of r.keys()) {
+        images[item.replace('./', '').replace('jpg', '')] = r(item);
+    }
     return images;
 }
 
 const importAllData = (r) => {
     let data = {};
-    r.keys().map(item => {
-        data[item.replace('./', '').replace('json','')] = r(item);
-    });
+    for (let item of r.keys()) {
+        data[item.replace('./', '').replace('json', '')] = r(item);
+    }
     return data;
 }
 

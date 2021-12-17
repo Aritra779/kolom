@@ -25,6 +25,9 @@ nav {
     background-color : antiquewhite;
     border-radius : 10px;
 }
+.navbar-nav .nav-link{
+    border-radius: 10px;
+}
 
 #nav-list {
     margin-top: 15px;
@@ -34,5 +37,29 @@ nav {
 .nav-item{
     width: 100% ;
     text-align: center;
-    padding : 3px;
+    margin : 3px;
+    position : relative;
+    overflow : hidden;
+}
+
+.nav-item .nav-link {
+    text-align: center;
+    position: relative;
+}
+
+.nav-item .nav-link:after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 5%;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-item .nav-link:hover::after {
+    width: 140%;
+    left: -20%;
 }

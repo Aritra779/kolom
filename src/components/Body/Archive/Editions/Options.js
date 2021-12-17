@@ -47,7 +47,7 @@ const Options = forwardRef(({content},ref) => {
                     <h5 className="card-title  text-center">External <i>Google Drive</i> Link</h5>
                     <p className="card-text">On clicking the link below you'll be re-directed to google drive where the pdf version of the magazine is available.</p>
                     <p className="card-text  text-muted">This option is recommended for users on mobile data as google drive will only load the page you're reading and not the entire pdf.</p>
-                    <a href={links[content-1]} className="btn btn-outline-dark" target="_blank">Drive Link for Edition {content}</a>
+                    <a href={links[content-1]} className="btn btn-outline-dark" target="_blank" rel = "noreferrer">Drive Link for Edition {content}</a>
                 </div>
                 <div className="card-body border-bottom">
                     <h5 className="card-title  text-center">Carousel</h5>

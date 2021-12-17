@@ -1,5 +1,4 @@
-﻿
-import { useState, useLayoutEffect } from 'react';
+﻿import { useLayoutEffect } from 'react';
 import { Parallax } from "react-parallax";
 import "./Home.css";
 import Particles from 'react-particles-js';
@@ -7,10 +6,10 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import settings from './particlesjs-config.json';
-import img1 from "../../../Images/img-01.jpg";
-import img2 from "../../../Images/img-02.jpg";
-import img3 from "../../../Images/img-03.jpg";
-import img4 from "../../../Images/img-04.jpg";
+import img1 from "../../../Images/img-01.webp";
+import img2 from "../../../Images/img-02.webp";
+import img3 from "../../../Images/img-03.webp";
+import img4 from "../../../Images/img-04.webp";
 import LatestEdition from './LatestEdition';
 import ShortAbout from './ShortAbout';
 import ShortArchive from './ShortArchive';

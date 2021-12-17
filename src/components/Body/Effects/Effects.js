@@ -13,11 +13,11 @@ const Effects = ({id , title , color}) => {
 
     useLayoutEffect(() => {
         const gsap_trig = ScrollTrigger.getAll();
-        gsap_trig.map(trig => {
+        for (let trig of gsap_trig) {
             if (trig !== null) {
                 trig.kill();
             }
-        });
+        }
 
         const rerun = (head) => {
             let word = document.getElementById(head.id);
