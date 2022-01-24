@@ -25,17 +25,17 @@ const importAll = (r) => {
 const SwiperBook = ({ content }) => {
     var images;
     switch (content) {
-        case 1: images = importAll(require.context('../../../../Materials/1424', false, /\.jpg/));
+        case 1: images = importAll(require.context('../../../../Materials/1424', false, /\.webp/));
             break;
-        case 2: images = importAll(require.context('../../../../Materials/1425', false, /\.jpg/));
+        case 2: images = importAll(require.context('../../../../Materials/1425', false, /\.webp/));
             break;
-        case 3: images = importAll(require.context('../../../../Materials/1426', false, /\.jpg/));
+        case 3: images = importAll(require.context('../../../../Materials/1426', false, /\.webp/));
             break;
-        case 4: images = importAll(require.context('../../../../Materials/1427', false, /\.jpg/));
+        case 4: images = importAll(require.context('../../../../Materials/1427', false, /\.webp/));
             break;
-        case 5: images = importAll(require.context('../../../../Materials/1428', false, /\.jpg/));
+        case 5: images = importAll(require.context('../../../../Materials/1428', false, /\.webp/));
             break;
-        case 6: images = importAll(require.context('../../../../Materials/1428_oct', false, /\.jpg/));
+        case 6: images = importAll(require.context('../../../../Materials/1428_oct', false, /\.webp/));
             break;
         default: break;
     }
@@ -67,7 +67,7 @@ const SwiperBook = ({ content }) => {
                         return (
                             <SwiperSlide key={image}>
                                 <div className="swiper-zoom-container">
-                                    <img data-src={images[image[0]]['default']} className="swiper-lazy" alt={`Page - ${image[0].replace('.jpg', '')}` }/>
+                                    <img data-src={images[image[0]]['default']} className="swiper-lazy" alt={`Page - ${image[0].replace('.webp', '')}` }/>
                                     <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                                 </div>
                             </SwiperSlide>

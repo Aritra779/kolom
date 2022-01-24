@@ -31,22 +31,22 @@
 }
 
 #Edition #edtn1 .bg-img {
-    background-image: url("../../../../Materials/1424/01.jpg");
+    background-image: url("../../../../Materials/1424/01.webp");
 }
 #Edition #edtn2 .bg-img {
-    background-image: url("../../../../Materials/1425/01.jpg");
+    background-image: url("../../../../Materials/1425/01.webp");
 }
 #Edition #edtn3 .bg-img {
-    background-image: url("../../../../Materials/1426/01.jpg");
+    background-image: url("../../../../Materials/1426/01.webp");
 }
 #Edition #edtn4 .bg-img {
-    background-image: url("../../../../Materials/1427/001.jpg");
+    background-image: url("../../../../Materials/1427/001.webp");
 }
 #Edition #edtn5 .bg-img {
-    background-image: url("../../../../Materials/1428/01.jpg");
+    background-image: url("../../../../Materials/1428/01.webp");
 }
 #Edition #edtn6 .bg-img {
-    background-image: url("../../../../Materials/1428_oct/001.jpg");
+    background-image: url("../../../../Materials/1428_oct/001.webp");
 }
 
 /*
@@ -67,7 +67,7 @@
 #book .flip-book {
 
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
-    background-image : url('../../../../Images/background.jpg');
+    background-image : url('../../../../Images/background.webp');
     display: none;
     background-size: cover;
 }

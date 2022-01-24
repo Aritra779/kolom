@@ -1,9 +1,9 @@
-import img1 from '../../../../Materials/1424/01.jpg';
-import img2 from '../../../../Materials/1425/01.jpg';
-import img3 from '../../../../Materials/1426/01.jpg';
-import img4 from '../../../../Materials/1427/001.jpg';
-import img5 from '../../../../Materials/1428/01.jpg';
-import img6 from '../../../../Materials/1428_oct/001.jpg';
+import img1 from '../../../../Materials/1424/01.webp';
+import img2 from '../../../../Materials/1425/01.webp';
+import img3 from '../../../../Materials/1426/01.webp';
+import img4 from '../../../../Materials/1427/001.webp';
+import img5 from '../../../../Materials/1428/01.webp';
+import img6 from '../../../../Materials/1428_oct/001.webp';
 import 'swiper/swiper-bundle.min.css'
 
 // swiper core styles

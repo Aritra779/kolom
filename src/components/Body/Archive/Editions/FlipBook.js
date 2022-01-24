@@ -98,7 +98,7 @@ const Page = forwardRef((props, ref) => {
 const importAllImages = (r) => {
     let images = {};
     for (let item of r.keys()) {
-        images[item.replace('./', '').replace('jpg', '')] = r(item);
+        images[item.replace('./', '').replace('webp', '')] = r(item);
     }
     return images;
 }
@@ -119,22 +119,22 @@ const FlipBook = ({ content }) => {
     var images;
     var data;
     switch (content) {
-        case 1: images = importAllImages(require.context('../../../../Materials/1424', false, /\.jpg/));
+        case 1: images = importAllImages(require.context('../../../../Materials/1424', false, /\.webp/));
             data = importAllData(require.context('../../../../Materials/1424/Data', false, /\.json/));
             break;
-        case 2: images = importAllImages(require.context('../../../../Materials/1425', false, /\.jpg/));
+        case 2: images = importAllImages(require.context('../../../../Materials/1425', false, /\.webp/));
             data = importAllData(require.context('../../../../Materials/1425/Data', false, /\.json/));
             break;
-        case 3: images = importAllImages(require.context('../../../../Materials/1426', false, /\.jpg/));
+        case 3: images = importAllImages(require.context('../../../../Materials/1426', false, /\.webp/));
             data = importAllData(require.context('../../../../Materials/1426/Data',false, /\.json/));
             break;
-        case 4: images = importAllImages(require.context('../../../../Materials/1427', false, /\.jpg/));
+        case 4: images = importAllImages(require.context('../../../../Materials/1427', false, /\.webp/));
             data = importAllData(require.context('../../../../Materials/1427/Data', false, /\.json/));
             break;
-        case 5: images = importAllImages(require.context('../../../../Materials/1428', false, /\.jpg/));
+        case 5: images = importAllImages(require.context('../../../../Materials/1428', false, /\.webp/));
             data = importAllData(require.context('../../../../Materials/1428/Data', false, /\.json/));
             break;
-        case 6: images = importAllImages(require.context('../../../../Materials/1428_oct', false, /\.jpg/));
+        case 6: images = importAllImages(require.context('../../../../Materials/1428_oct', false, /\.webp/));
             data = importAllData(require.context('../../../../Materials/1428_oct/Data', false, /\.json/));
             break;
         default: break;

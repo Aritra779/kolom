@@ -1,6 +1,6 @@
 import Effects from '../../../Effects/Effects';
-import img1 from '../../../../../Images/donated-01.jpg';
-import img2 from '../../../../../Images/received.jpg';
+import img1 from '../../../../../Images/donated-01.webp';
+import img2 from '../../../../../Images/received.webp';
 
 const Donated = () => {
     return (

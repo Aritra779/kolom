@@ -545,12 +545,12 @@ canvas {
 #HomeIntroduction .paragraph #edn1, #HomeIntroduction .paragraph #e1 {
     float: left;
     margin-right: 5%;
-    background-image: url("../../../Materials/1424/01.jpg");
+    background-image: url("../../../Materials/1424/01.webp");
 }
 #HomeIntroduction .paragraph #edn4, #HomeIntroduction .paragraph #e4 {
     float: right;
     margin-left: 5%;
-    background-image: url("../../../Materials/1427/001.jpg");
+    background-image: url("../../../Materials/1427/001.webp");
 }
 #HomeIntroduction .paragraph #e4{
     right : 0;
@@ -558,7 +558,7 @@ canvas {
 #HomeIntroduction .paragraph #edn6, #HomeIntroduction .paragraph #e6 {
     float: left;
     margin-right: 5%;
-    background-image: url("../../../Materials/1428_oct/001.jpg");
+    background-image: url("../../../Materials/1428_oct/001.webp");
 }
 
 @media (min-width : 700px){

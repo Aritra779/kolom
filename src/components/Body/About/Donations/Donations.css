@@ -15,10 +15,10 @@
     background-size: cover;
 }
     #Donations .card #D1 {
-        background-image: url("../../../../Images/donated.jpg");
+        background-image: url("../../../../Images/donated.webp");
     }
     #Donations .card #D2 {
-        background-image: url("../../../../Images/received.jpg");
+        background-image: url("../../../../Images/received.webp");
     }
 
 
