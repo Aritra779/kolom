@@ -8,7 +8,7 @@ const Pen = () => {
                 id="AboutPen"
                 title="Editors' Corner"
             />
-            <div className="container pb-5">
+            <div className="container pb-5" lang = "bn">
                 <div className="row mt-3 mb-3 g-4">
                     <div className="col-md-6">
                         <div className = "wrap">

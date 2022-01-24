@@ -78,7 +78,7 @@ const Footer = () => {
     return (
         <footer className="footer bg-dark">
             <div className="container-fluid pt-5 pb-3">
-                <div className="row">
+                <div className="row" lang = "bn">
                     <div
                         id = "control"
                         className="col-md-9 row"
@@ -176,7 +176,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className = "copyright">
+                <div className = "copyright" lang = "bn">
                     &#169; আমাদের স্বাধীন কলম
                 </div>
             </div>  

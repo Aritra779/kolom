@@ -20,7 +20,7 @@ const Credits = () => {
                         </svg>
                         <h3>Edition 1</h3>
                             <span>2017 September</span>
-                            <div className="list-group list-group-flush mt-5">
+                            <div className="list-group list-group-flush mt-5" lang = "bn">
                                 <li className="list-group-item">দেবার্ঘ্য কুমার চক্রবর্তী</li>
                                 <li className="list-group-item"> অরিত্র দত্ত </li>
                                 <li className="list-group-item">সায়ক  চক্রবর্তী </li>
@@ -40,7 +40,7 @@ const Credits = () => {
                         </svg>
                         <h3>Edition 2</h3>
                         <span>2018 October</span>
-                            <div className="list-group list-group-flush mt-5">
+                            <div className="list-group list-group-flush mt-5" lang = "bn">
                                 <li className="list-group-item">দেবার্ঘ্য কুমার চক্রবর্তী </li>
                                 <li className="list-group-item">সায়ক  চক্রবর্তী </li>
                                 <li className="list-group-item">সোহান ঘোষ </li>
@@ -59,7 +59,7 @@ const Credits = () => {
                         </svg>
                         <h3>Edition 3</h3>
                         <span>2019 October</span>
-                            <div className="list-group list-group-flush mt-5">
+                            <div className="list-group list-group-flush mt-5" lang = "bn">
                                 <li className="list-group-item">দেবার্ঘ্য কুমার চক্রবর্তী </li>
                                 <li className="list-group-item">সায়ক  চক্রবর্তী </li>
                                 <li className="list-group-item">সোহান ঘোষ </li>
@@ -76,7 +76,7 @@ const Credits = () => {
                         </svg>
                         <h3>Edition 4</h3>
                         <span>2020 October</span>
-                            <div className="list-group list-group-flush mt-5">
+                            <div className="list-group list-group-flush mt-5" lang = "bn">
                                 <li className="list-group-item">অরিত্র দত্ত </li>
                                 <li className="list-group-item">দেবার্ঘ্য কুমার চক্রবর্তী </li>
                                 <li className="list-group-item">সোহান ঘোষ </li>
@@ -96,7 +96,7 @@ const Credits = () => {
                         </svg>
                         <h3>Edition 5</h3>
                         <span>2021 May</span>
-                            <div className="list-group list-group-flush mt-3">
+                            <div className="list-group list-group-flush mt-3" lang = "bn">
                                 <li className="list-group-item">দেবার্ঘ্য কুমার চক্রবর্তী </li>
                                 <li className="list-group-item">ঈপ্সিতা সর্দার  </li>
                                 <li className="list-group-item">অরিত্র দত্ত </li>
@@ -117,7 +117,7 @@ const Credits = () => {
                         </svg>
                         <h3>Edition 6</h3>
                         <span>2021 October</span>
-                            <div className="list-group list-group-flush mt-3 ">
+                            <div className="list-group list-group-flush mt-3" lang = "bn">
                                 <li className="list-group-item">দেবার্ঘ্য কুমার চক্রবর্তী </li>
                                 <li className="list-group-item">ঈপ্সিতা সর্দার  </li>
                                 <li className="list-group-item">আত্রেয়ী  হালদার  </li>

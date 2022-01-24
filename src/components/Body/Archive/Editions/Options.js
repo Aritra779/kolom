@@ -40,7 +40,7 @@ const Options = forwardRef(({content},ref) => {
                 title={`Edition ${content}`}
             />
             <div className="card bg-color mt-3 mb-5">
-                <div className="card-header  text-center bg-success text-white">
+                <div className="card-header text-center bg-success text-white">
                     Please choose one of the prefered options
                 </div>
                 <div className="card-body border-bottom">

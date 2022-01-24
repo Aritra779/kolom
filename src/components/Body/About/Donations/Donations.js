@@ -45,8 +45,7 @@ const Donations = () => {
                             <div className= "bg-img" id = "D1"></div>
                             <div className="card-img-overlay">
                                 <h5 className="card-title">Donations Made</h5>
-                                <div className="card-text">
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -54,8 +53,6 @@ const Donations = () => {
                         <div className="card h-100" onClick={() => scroll('Received')}>
                             <div className = "bg-img" id = "D2"></div>                            <div className="card-img-overlay">
                                 <h5 className="card-title">Donations Received</h5>
-                                <div className="card-text">
-                                </div>
                             </div>
                         </div>
                     </div>

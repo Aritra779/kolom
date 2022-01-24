@@ -1,5 +1,6 @@
 import Options from '../Archive/Editions/Options';
 import "./Home.css";
+import '../Archive/Editions/Editions.css';
 
 const LatestEdition = () => {
     return (

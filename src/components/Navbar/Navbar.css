@@ -63,3 +63,36 @@ nav {
     width: 140%;
     left: -20%;
 }
+
+.logo-img{
+    height : 100px;
+    width : 100px;
+    border-radius : 50%;
+    background-image : url("../../Images/logo.png");
+    background-repeat : no-repeat;
+    background-size : contain;
+}
+
+.logo-name{
+    display : flex;
+    align-items : center;
+    padding : 1%;
+}
+.site-name {
+    padding: 10%;
+    font-family: Lipishree;
+    font-size : 2.5em;
+}
+
+@media (max-width : 300px){
+    .logo-img{
+        height : 50px;
+        width : 50px;
+    }
+    .logo-name {
+        padding : 0;
+    }
+    .site-name {
+        font-size : 1.5em;
+    }
+}

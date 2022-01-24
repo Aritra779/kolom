@@ -17,7 +17,7 @@ const List = ({ edition }) => {
                             return (
                                 <div key={donor['name']} className="col">
                                     <article className="donationList__profile">
-                                        <span className="donationList__name">{ donor['name']}</span>
+                                        <span className="donationList__name" lang = "bn">{ donor['name']}</span>
                                         <span className="donationList__value">{ donor['amount']}<span>INR</span></span>
                                     </article>
                                 </div>

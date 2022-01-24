@@ -1,5 +1,5 @@
 import Effects from '../../../Effects/Effects';
-import img1 from '../../../../../Images/donated.jpg';
+import img1 from '../../../../../Images/donated-01.jpg';
 import img2 from '../../../../../Images/received.jpg';
 
 const Donated = () => {
@@ -16,8 +16,8 @@ const Donated = () => {
                             <div className="name">
                                 <img src={img1} className="img-fluid" alt="NGO1" />
                                 <div className = "p-3">
-                                    <h4>Name</h4>
-                                    <span className = "text-muted">Address</span>
+                                    <h4>Netaji Scout & Guide Group</h4>
+                                    <span className = "text-muted">Kodalia</span>
                                 </div>
                             </div>
                         </div>

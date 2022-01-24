@@ -20,7 +20,6 @@
 }
 
 .swiper-slide {
-    height: 100%;
     text-align: center;
     font-size: 18px;
     
@@ -33,10 +32,6 @@
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
     box-shadow: 20px 20px 5px #808080;
 }
 

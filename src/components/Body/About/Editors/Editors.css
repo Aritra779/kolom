@@ -47,9 +47,7 @@
     border : 0px;
     border-radius : 0 20%;
 }
-#Editors .card-title {
-    font-family: 'Comfortaa', cursive;
-}
+
 
 #Editors .card:hover .card-title {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;

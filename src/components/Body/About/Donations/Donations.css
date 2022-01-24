@@ -1,9 +1,8 @@
-#Donations .col {
-    overflow: hidden;
-}
+
 
 #Donations .card{
     cursor :pointer;
+    overflow :  hidden;
 }
 #Donations .card:hover {
     border : 0;
@@ -23,7 +22,8 @@
     }
 
 
-#Donations .card .card-text {
+#Donations .card::before {
+    content : "";
     width: 100%;
     height: 100%;
     vertical-align: bottom;
@@ -34,7 +34,7 @@
     background-color: rgba(219,224,186,0.65);
 }
 
-#Donations .card:hover .card-text {
+#Donations .card:hover::before{
     opacity: 1;
     transform: translateY(100%);
     transition: 2s all ease-in;
@@ -187,7 +187,7 @@
     font-weight: 600;
     font-size: 20px;
     margin-left: 12px;
-    font-family: 'Lipishree Unicode';
+    font-family: Lipishree;
 }
 
 .donationList__value {

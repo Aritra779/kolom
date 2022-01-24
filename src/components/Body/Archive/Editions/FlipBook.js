@@ -10,7 +10,7 @@ const turn = (e, book , page) => {
 const open = (content) => {
     let modal = document.getElementById('Modal');
     if (modal) {
-        modal = modal.childNodes[0].childNodes[0].childNodes[1];
+        modal = modal .childNodes[0].childNodes[0].childNodes[1];
     }
     if (content) {
         modal.innerHTML = content;
@@ -22,7 +22,7 @@ const Page = forwardRef((props, ref) => {
     return (
         <div className="page" ref={ref}>
             <div className="page-content">
-                <img className="page-image" src={props.img} alt = "page_of_book"/>
+                <img className="page-image" src={props.img} alt={`Page Number - ${props.key}`} />
                 <div>
                     {props.data && props.data.map(item => {
                         if (item.page) {
@@ -32,7 +32,7 @@ const Page = forwardRef((props, ref) => {
                                     onClick={(e) => turn(e, props.book, item.page)}
                                     style=
                                     {{
-                                        border : '0px',
+                                        border: '0px',
                                         position: 'absolute',
                                         height: `${item.height}%`,
                                         width: `${item.width}%`,
@@ -50,7 +50,7 @@ const Page = forwardRef((props, ref) => {
                                     key={props.data.indexOf(item)}
                                     href={item.link}
                                     target="_blank"
-                                    rel = "noreferrer"
+                                    rel="noreferrer"
                                     style=
                                     {{
                                         position: 'absolute',
@@ -83,7 +83,7 @@ const Page = forwardRef((props, ref) => {
                                         backgroundColor: `rgba(178, 194, 219,0.5)`,
                                         borderRadius: '10px'
                                     }}
-                                /> 
+                                />
                             );
                         }
                     })}
@@ -91,6 +91,7 @@ const Page = forwardRef((props, ref) => {
             </div>
         </div>
         );
+
 });
 
 
@@ -111,6 +112,7 @@ const importAllData = (r) => {
 }
 
 const FlipBook = ({ content }) => {
+    let count = 0;
     const [page, setPage] = useState(0);
     const [totalPage, setTotalPage] = useState(0);
     const book = useRef();
@@ -164,12 +166,12 @@ const FlipBook = ({ content }) => {
     }
 
     return (
-        <div>
+        <section>
             <Effects
                 id="fourth"
                 title={`Edition ${content} Book`}
             />
-            <div id="book">
+            <article id="book">
                 <HTMLFlipBook
                     width={500}
                     height={650}
@@ -188,11 +190,11 @@ const FlipBook = ({ content }) => {
                     className="flip-book"
                 >
                     {
-                        Object.entries(images).map(image => {
+                    Object.entries(images).map(image => {
                             if (data[image[0]]) {
                                 return (
                                     <Page
-                                        key={image}
+                                        key={Object.entries(images).indexOf(image)}
                                         img={images[image[0]]['default']}
                                         data={data[image[0]]}
                                         book={book}
@@ -202,19 +204,20 @@ const FlipBook = ({ content }) => {
                             else {
                                 return (
                                     <Page
-                                        key={image}
+                                        key={Object.entries(images).indexOf(image)}
                                         img={images[image[0]]['default']}
                                     />
                                 );
                             }
                             
-                        })
+                    })
                     }
+                    
                 </HTMLFlipBook>
                 <div className="navigation row">
-                    <span className="col-sm-4 g-2"><button className="btn btn-outline-success" type="button" onClick={prevButtonClick}>Previous Page</button></span>
+                    <span className="col-sm-4 g-2"><button className={`btn btn-outline-success ${page === 0 ? 'disabled' : ''}`} type="button" onClick={prevButtonClick} >Previous Page</button></span>
                     <span className="col-sm-4 g-2">[<span>{page + 1}</span> of <span>{totalPage}</span>]</span>
-                    <span className="col-sm-4 g-2"><button className="btn btn-outline-success" type="button" onClick={nextButtonClick}>Next Page</button></span>
+                    <span className="col-sm-4 g-2"><button className={`btn btn-outline-success ${page === totalPage - 1 ? 'disabled' : ''}`} type="button" onClick={nextButtonClick}>Next Page</button></span>
                 </div>
                
                 <div className="modal fade" id="Modal" tabIndex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
@@ -229,8 +232,8 @@ const FlipBook = ({ content }) => {
                     </div>
                 </div>
 
-            </div>
-        </div>
+            </article>
+        </section>
     );
 }
 

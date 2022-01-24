@@ -17,7 +17,7 @@ SwiperCore.use([Keyboard,Lazy, Zoom, Pagination, Navigation]);
 const importAll = (r) => {
     let images = {};
     for (let item of r.keys()) {
-        images[item.replace('./', '')] = r(item);
+        images[item.replace('./','')] = r(item);
     }
     return images;
 }
@@ -66,8 +66,8 @@ const SwiperBook = ({ content }) => {
                     Object.entries(images).map(image => {
                         return (
                             <SwiperSlide key={image}>
-                                <div className = "swiper-zoom-container">
-                                    <img data-src={images[image[0]]['default']} className="swiper-lazy" alt = "Pages"/>
+                                <div className="swiper-zoom-container">
+                                    <img data-src={images[image[0]]['default']} className="swiper-lazy" alt={`Page - ${image[0].replace('.jpg', '')}` }/>
                                     <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                                 </div>
                             </SwiperSlide>

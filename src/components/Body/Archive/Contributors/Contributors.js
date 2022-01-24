@@ -28,9 +28,9 @@ const Contributors = () => {
                                             <div className="background-img"></div>
                                         </div>
                                         <div className="col-md-8">
-                                                <ul className="row row-cols-2 row-cols-md-2 row-cols-lg-3">
+                                                <ul className="row row-cols-2 row-cols-md-2 row-cols-lg-3" lang = "bn">
                                                     <li className="col list-group-item">অরিত্র  দত্ত </li>
-                                                <li className="col list-group-item list-group-item-primary">দেবার্ঘ্য কুমার চক্রবর্তী </li>
+                                                    <li className="col list-group-item list-group-item-primary">দেবার্ঘ্য কুমার চক্রবর্তী </li>
                                                     <li className="col list-group-item list-group-item-secondary">অনির্বাণ মান্না </li>
                                                     <li className="col list-group-item list-group-item-success">সোহান ঘোষ </li>
                                                     <li className="col list-group-item list-group-item-danger">ডালিয়ান বোস </li>
@@ -70,7 +70,7 @@ const Contributors = () => {
                                             <div className="background-img"></div>
                                         </div>
                                         <div className="col-md-8">
-                                            <ul className="row row-cols-2 row-cols-md-2 row-cols-lg-3">
+                                            <ul className="row row-cols-2 row-cols-md-2 row-cols-lg-3" lang = "bn">
                                                 <li className="col list-group-item">বং পাইপারস</li>
                                                 <li className="col list-group-item list-group-item-primary">রূপম রানা</li>
                                                 <li className="col list-group-item list-group-item-secondary">রিয়েলরিল মিডিয়াওয়ার্কস</li>
@@ -119,7 +119,7 @@ const Contributors = () => {
                                             <div className="background-img"></div>
                                         </div>
                                         <div className="col-md-8">
-                                            <ul className="row row-cols-2 row-cols-md-2 row-cols-lg-3">
+                                            <ul className="row row-cols-2 row-cols-md-2 row-cols-lg-3" lang = "bn">
                                                 <li className="col list-group-item">শুভঙ্কর দেব </li>
                                                 <li className="col list-group-item list-group-item-primary">স্মৃতি বেগ বিশ্বাস </li>
                                                 <li className="col list-group-item list-group-item-secondary">সোহান ঘোষ </li>
@@ -157,7 +157,7 @@ const Contributors = () => {
                                             <div className="background-img"></div>
                                         </div>
                                         <div className="col-md-8">
-                                            <ul className="row row-cols-2 row-cols-md-2 row-cols-lg-3">
+                                            <ul className="row row-cols-2 row-cols-md-2 row-cols-lg-3" lang = "bn">
                                                 <li className="col list-group-item">অপর্ণা ঘোষ</li>
                                                 <li className="col list-group-item list-group-item-primary">প্রমথেশ ভূইয়া</li>
                                                 <li className="col list-group-item list-group-item-secondary">নিরবেদ</li>
@@ -243,7 +243,7 @@ const Contributors = () => {
                                             <div className="background-img"></div>
                                         </div>
                                         <div className="col-md-8">
-                                            <ul className="row row-cols-2 row-cols-md-2 row-cols-lg-3">
+                                            <ul className="row row-cols-2 row-cols-md-2 row-cols-lg-3" lang = "bn">
                                                 <li className="col list-group-item">শিঞ্জিত</li>
                                                 <li className="col list-group-item list-group-item-primary">কৌশিকী ভট্টাচার্য্</li>
                                                 <li className="col list-group-item list-group-item-secondary">মহ: জাহিদ আখতার খান</li>
@@ -287,7 +287,7 @@ const Contributors = () => {
                                             <div className="background-img"></div>
                                         </div>
                                         <div className="col-md-8">
-                                            <ul className="row row-cols-2 row-cols-md-2 row-cols-lg-3">
+                                            <ul className="row row-cols-2 row-cols-md-2 row-cols-lg-3" lang = "bn">
                                                 <li className="col list-group-item">আরণ্যক বসু</li>
                                                 <li className="col list-group-item list-group-item-primary">ময়ূখ চৌধুরী</li>
                                                 <li className="col list-group-item list-group-item-secondary">মৌসুমী সেন চক্রবর্তী</li>

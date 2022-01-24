@@ -13,17 +13,17 @@
 /* Animation */
 .animate {
     color: white;
-    font-size: 2rem;
+    font-family : Lipishree;
+    font-size: 2.5em;
     text-align: center;
     position: absolute;
     top: 30%;
     left: 10%;
     white-space: nowrap;
     overflow: hidden;
-    font-family: monospace;
     line-height: 160%;
     border-right: solid 3px #9919a3;
-    animation: animated-text 4s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;
+    animation: animated-text 4s steps(30,end) 1s 1 normal both, animated-cursor 600ms steps(30,end) infinite;
 }
 
 
@@ -36,7 +36,7 @@
     }
 
     to {
-        width: 325px;
+        width: 300px;
     }
 }
 
@@ -88,7 +88,6 @@
 .intro {
     text-align: justify;
     position: relative;
-    background-color: #efa3af;
 }
 
 canvas {
@@ -109,8 +108,11 @@ canvas {
     background-size: cover;
     background-position: 100% 100%;
     opacity : 0.6;
-
 }
+ #Home #Intro .particles-js{
+     opacity : 0.2;
+     z-index : 1;
+ }
 
 #Home #Latest {
     text-align : left;
@@ -130,8 +132,7 @@ canvas {
 }
 
     .tilesWrap .col .list{
-        display: inline-block;
-        padding: 80px 20px 40px;
+        padding: 20% 3% 5%;
         position: relative;
         vertical-align: top;
         background: #3c3c3d;
@@ -206,7 +207,7 @@ canvas {
             }
 
         .tilesWrap .col .list:hover h2 {
-            top: 0px;
+            top: 0;
             opacity: 0.6;
         }
 
@@ -439,3 +440,163 @@ canvas {
         transition: transform 0.45s ease-in-out;
         transform: translate3d(200%, 0, 0) rotate(35deg);
     }
+
+
+/*
+    Introduction
+*/
+
+#HomeIntroduction .language {
+    float : right;
+    height : 100px;
+    width : 100px;
+}
+
+        #HomeIntroduction .language button {
+            z-index: 1;
+            position: relative;
+            padding: 15%;
+            outline: none;
+            border: none;
+            overflow: hidden;
+            background-color: inherit;
+            border-radius: 50%;
+            transition: color 1.5s ease-in-out 0s;
+        }
+
+            #HomeIntroduction .language button::before {
+                content: '';
+                z-index: -1;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background-color: #3cefff;
+                opacity : 0.6 ;
+                transform-origin: center;
+                transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+                transition: transform 1.5s ease-in-out 0s;
+            }
+
+   #HomeIntroduction .language button:hover {
+        cursor: pointer;
+    }
+
+    #HomeIntroduction .language button:hover::before {
+        transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+    }
+
+#HomeIntroduction .intro-text #beng{
+    font-family: Lipishree;
+    font-size : 1.3em;
+}
+#HomeIntroduction .intro-text #eng {
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.2em;
+    font-weight : bold;
+}
+
+@media (max-width : 500px){
+    #HomeIntroduction .language{
+        height : 70px;
+        width : 70px;
+    }
+   
+}
+@media (max-width : 300px){
+    #HomeIntroduction .language{
+        height : 50px;
+        width : 50px;
+    }
+}
+#HomeIntroduction .para{
+    clear : both;
+}
+#HomeIntroduction .paragraph{
+    position : relative;
+}
+    #HomeIntroduction .paragraph .bck-img, #HomeIntroduction .paragraph .ghost {
+        height: 250px;
+        background-position : center center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 40%;
+        max-width: 200px;
+        
+    }
+#HomeIntroduction .paragraph .ghost {
+    position: absolute;
+
+}
+    #HomeIntroduction .paragraph .ghost-bck {
+        opacity: 0.1;
+    }
+#HomeIntroduction .paragraph .invisi {
+    visibility : hidden;
+}
+#HomeIntroduction .paragraph .visi {
+    animation: slider 1s ease-in;
+}
+#HomeIntroduction .paragraph .hideme{
+    animation : hide 2s ease;
+}
+#HomeIntroduction .paragraph #edn1, #HomeIntroduction .paragraph #e1 {
+    float: left;
+    margin-right: 5%;
+    background-image: url("../../../Materials/1424/01.jpg");
+}
+#HomeIntroduction .paragraph #edn4, #HomeIntroduction .paragraph #e4 {
+    float: right;
+    margin-left: 5%;
+    background-image: url("../../../Materials/1427/001.jpg");
+}
+#HomeIntroduction .paragraph #e4{
+    right : 0;
+}
+#HomeIntroduction .paragraph #edn6, #HomeIntroduction .paragraph #e6 {
+    float: left;
+    margin-right: 5%;
+    background-image: url("../../../Materials/1428_oct/001.jpg");
+}
+
+@media (min-width : 700px){
+    #HomeIntroduction .paragraph #edn1, #HomeIntroduction .paragraph #edn6{
+        margin-right : 2%;
+    }
+    #HomeIntroduction .paragraph #edn4{
+        margin-left : 2%;
+    }
+}
+@media (max-width : 300px){
+    #HomeIntroduction .paragraph .bck-img, #HomeIntroduction .paragraph .ghost{
+        display : none;
+    }
+}
+
+@keyframes slider{
+    0%{
+        transform : skewX(10deg) translateX(-100%);
+    }
+    60%{
+        transform : skewX(-5deg) translateX(0px);
+    }
+    65%{
+        transform : skewX(-5deg) translateX(20%);
+    }
+    100%{
+        transform : skewX(0deg);
+    }
+}
+
+@keyframes hide{
+    0%{
+        opacity : 1;
+    }
+    100%{
+        opacity : 0.1;
+    }
+}
+
+
