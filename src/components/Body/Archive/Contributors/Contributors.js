@@ -8,7 +8,7 @@ const Contributors = () => {
         <div id = "Contributors">
         <div className="container pt-5 pb-5">
             <Effects
-                id="first"
+                id="Archive_Contributors"
                 title="Contributors"
             />
             <div className  = "mt-5 mb-5">

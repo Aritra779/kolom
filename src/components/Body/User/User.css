@@ -1,0 +1,138 @@
+#SignupLogin {
+    min-height : 80vh;
+    background: black;
+    overflow : auto;
+    padding-top : 60px;
+}
+
+#SignupLogin .loginpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#SignupLogin .main {
+    position : relative;
+    width: 80%;
+    min-width : 220px;
+    max-width : 500px;
+    height: 800px;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+}
+
+#SignupLogin .signup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+#SignupLogin input {
+    width: 70%;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+    #SignupLogin .headbutton {
+        color: #fff;
+        width : fit-content;
+        font-size: 2.3em;
+        margin: 55px auto;
+        padding : 2%;
+        font-weight: bold;
+        border-radius: 15px 15px;
+        box-shadow: none;
+    }
+
+#SignupLogin .is-invalid {
+    background-color: #EFB4B4;
+}
+
+#SignupLogin .is-valid {
+    background-color: #accd8f;
+}
+
+#SignupLogin .valid-feedback, #SignupLogin .invalid-feedback {
+    width : 70%;
+    margin: 10px auto;
+}
+
+#SignupLogin button {
+    width: 70%;
+    margin: 10px auto;
+    display: block;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+}
+
+#SignupLogin  .submitbtn:hover {
+    background: #6D44B8;
+}
+
+#SignupLogin .login {
+    position: absolute;
+    top : 670px;
+    width : 100%;
+    height: 100%;
+    background-color : #fff;
+    border-radius: 60% / 10%;
+    transition: .8s ease-in-out;
+}
+
+#SignupLogin .login .headbutton{
+    color: #573b8a;
+}
+
+#SignupLogin .slideup{
+    top :120px;
+}
+
+
+#SignupLogin .scaledown {
+    transform: scale(.6);
+}
+
+#SignupLogin .headbutton:focus {
+    color: #e149c4;
+}
+
+
+#SignupLogin .password{
+    position : relative;
+}
+
+#SignupLogin .password .showIcon{
+    position : absolute;
+    top : 0;
+    right : 0;
+    margin : 0;
+    height : 45px;
+    width : 15%;
+    padding : 1% 0 1%;
+    border-radius : 50%;
+}
+#SignupLogin .password .showIcon:focus {
+    box-shadow: none;
+    background: radial-gradient(#FCFFFD, #49BAE1);
+}
+
+
+/*
+    Background Particles
+*/
+    #SignupLogin .particles{
+        position: absolute;
+        left : 0;
+        width: 100%;
+        height: 896px;
+
+    }

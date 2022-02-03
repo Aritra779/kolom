@@ -1,17 +1,18 @@
 import Effects from '../../Effects/Effects';
+
+
 // swiper core styles
-import 'swiper/swiper.min.css'
+import 'swiper/css'
 
 // modules styles
-import 'swiper/components/navigation/navigation.min.css'
-import 'swiper/components/pagination/pagination.min.css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+
 
 import '../Carousel/Carousel.css';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Keyboard,Lazy, Navigation, Pagination, Zoom} from 'swiper';
-
-SwiperCore.use([Keyboard,Lazy, Zoom, Pagination, Navigation]);
+import { Keyboard,Lazy, Navigation, Pagination, Zoom} from 'swiper';
 
 
 const importAll = (r) => {
@@ -39,14 +40,14 @@ const SwiperBook = ({ content }) => {
             break;
         default: break;
     }
-
     return (
         <div>
             <Effects
-                id="fourth"
+                id="Archive_SwiperBook"
                 title={`Edition ${content} Carousel`}
             />
             <Swiper
+                modules={[Keyboard, Lazy, Zoom, Pagination, Navigation]}
                 slidesPerView={1}
                 spaceBetween={30}
                 centeredSlides={true}
@@ -65,9 +66,9 @@ const SwiperBook = ({ content }) => {
                 {
                     Object.entries(images).map(image => {
                         return (
-                            <SwiperSlide key={image}>
+                            <SwiperSlide key={image[0]}>
                                 <div className="swiper-zoom-container">
-                                    <img data-src={images[image[0]]['default']} className="swiper-lazy" alt={`Page - ${image[0].replace('.webp', '')}` }/>
+                                    <img data-src={image[1]} className="swiper-lazy" alt={`Page - ${image[0].replace('.webp', '')}`} />
                                     <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                                 </div>
                             </SwiperSlide>

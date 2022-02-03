@@ -1,10 +1,10 @@
-.main {
-    background-color: #e6e2da;
+#Home {
+   
     font-family: sans-serif;
     text-align: center;
 }
 
-.overimg1{
+#Home .overimg1{
     position : absolute;
     top: 49%;
     left : 46%;
@@ -90,11 +90,6 @@
     position: relative;
 }
 
-canvas {
-    display: block;
-    vertical-align: bottom;
-}
-
 #Home #ShortAbout {
     background-color: #515356;
 }
@@ -104,13 +99,10 @@ canvas {
     top : 0;
     width: 100%;
     height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 100%;
     opacity : 0.6;
 }
  #Home #Intro .particles-js{
-     opacity : 0.2;
+     opacity : 0.3;
      z-index : 1;
  }
 
@@ -271,13 +263,13 @@ canvas {
     border : 0;
 }
 
-.card:hover .button{
+#ShortArchive .card:hover .button{
     opacity: 1;
 }
 
 
-.front,
-.back {
+#ShortArchive .front,
+#ShortArchive .back {
     display: flex;
     border-radius: 6px;
     background-position: center;
@@ -294,7 +286,7 @@ canvas {
     transition: ease-in-out 600ms;
 }
 
-.front {
+#ShortArchive .front {
     background-size: cover;
     opacity : 0.8;
     font-size: 1.618rem;
@@ -302,16 +294,16 @@ canvas {
     overflow: hidden;
 }
 
-#Cont {
+#ShortArchive #Cont {
     background-image: url("../../../Images/contribution.webp");
 }
 
-#PEdtn {
+#ShortArchive #PEdtn {
     color:white;
     background-image: url("../../../Images/past_editions.webp");
 }
 
-    .front:before {
+    #ShortArchive .front:before {
         position: absolute;
         display: block;
         content: "";
@@ -322,51 +314,51 @@ canvas {
         z-index: -1;
     }
 
-.card:hover .front {
+#ShortArchive .card:hover .front {
     transform: rotateY(180deg);
 }
 
-.card-b:hover .front {
+#ShortArchive .card-b:hover .front {
     transform: rotateY(-180deg);
 }
 
-.back {
+#ShortArchive .back {
     background: #fff;
     transform: rotateY(-180deg);
     padding: 0 5%;
 }
 
-    .back .button {
+    #ShortArchive .back .button {
         background: linear-gradient(135deg, #1a9be6, #1a57e6);
     }
 
-        .back .button:before {
+        #ShortArchive .back .button:before {
             box-shadow: 0 0 10px 10px rgba(26, 87, 230, 0.25);
             background-color: rgba(26, 87, 230, 0.25);
         }
 
-.card:hover .back {
+#ShortArchive .card:hover .back {
     transform: rotateY(0deg);
 }
 
-.card-b .back {
+#ShortArchive .card-b .back {
     transform: rotateY(180deg);
 }
 
-    .card-b .back .button-b {
+    #ShortArchive .card-b .back .button-b {
         background: linear-gradient(135deg, #e61a80, #e61a3c);
     }
 
-        .card-b .back .button:before {
+        #ShortArchive .card-b .back .button:before {
             box-shadow: 0 0 10px 10px rgba(230, 26, 60, 0.25);
             background-color: rgba(230, 26, 60, 0.25);
         }
 
-.card-b:hover .back {
+#ShortArchive .card-b:hover .back {
     transform: rotateY(0deg);
 }
 
-.button {
+#ShortArchive .card .button {
     transform: translateZ(40px);
     cursor: pointer;
     -webkit-backface-visibility: hidden;
@@ -383,7 +375,7 @@ canvas {
     opacity: 0;
 }
 
-    .button:before {
+    #ShortArchive .card .button:before {
         transition: 300ms ease;
         position: absolute;
         display: block;
@@ -398,19 +390,19 @@ canvas {
         top: 16px;
     }
 
-    .button:hover {
+    #ShortArchive .card .button:hover {
         transform: translateZ(55px);
     }
 
-        .button:hover:before {
+       #ShortArchive  .card .button:hover:before {
             transform: translateZ(-55px);
         }
 
-    .button:active {
+    #ShortArchive .card .button:active {
         transform: translateZ(20px);
     }
 
-        .button:active:before {
+        #ShortArchive .card .button:active:before {
             transform: translateZ(-20px);
             top: 12px;
         }
@@ -493,7 +485,7 @@ canvas {
     font-size : 1.3em;
 }
 #HomeIntroduction .intro-text #eng {
-    font-family: 'Josefin Slab', serif;
+    font-family: JosefinSlab;
     font-size: 1.2em;
     font-weight : bold;
 }

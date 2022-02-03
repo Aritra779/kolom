@@ -36,7 +36,7 @@ const Options = forwardRef(({content},ref) => {
     return (
         <div>
             <Effects
-                id="third"
+                id="Archive_Options"
                 title={`Edition ${content}`}
             />
             <div className="card bg-color mt-3 mb-5">

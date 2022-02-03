@@ -4,29 +4,29 @@ import img3 from '../../../../Materials/1426/01.webp';
 import img4 from '../../../../Materials/1427/001.webp';
 import img5 from '../../../../Materials/1428/01.webp';
 import img6 from '../../../../Materials/1428_oct/001.webp';
-import 'swiper/swiper-bundle.min.css'
+
 
 // swiper core styles
-import 'swiper/swiper.min.css'
+import 'swiper/css'
 
 // modules styles
-import 'swiper/components/navigation/navigation.min.css'
-import 'swiper/components/pagination/pagination.min.css'
-
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 import './Carousel.css';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore , {Lazy, Navigation , Pagination , Autoplay} from 'swiper';
+import {Lazy, Navigation , Pagination , Autoplay} from 'swiper';
 
-SwiperCore.use([ Lazy , Autoplay, Pagination, Navigation]);
 
 
 const Carousel = () => {
     return (
         <Swiper
+            modules={[Navigation, Pagination, Lazy, Autoplay]}
             slidesPerView={1}
             spaceBetween={30}
             centeredSlides={true}
+            grabCursor = {true}
             lazy={true}
             loop={true}
             loopFillGroupWithBlank={true}

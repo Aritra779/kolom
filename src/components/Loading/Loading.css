@@ -1,7 +1,9 @@
 .loading {
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    height : 100%;
+    width: 100%;
     background: radial-gradient(#AC67C9, #3E0A54);
+    position : relative;
 }
 
     .loading .wrapper {

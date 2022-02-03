@@ -6,7 +6,7 @@ const Editors = () => {
     return (
         <div id="Editors">
             <Effects
-                id="AboutEditors"
+                id="About_Editors"
                 title="Editors"
                 color='white'
             />

@@ -2,23 +2,19 @@ import { useLayoutEffect } from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
 import './Effects.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 const Effects = ({id , title , color}) => {
 
-
     useLayoutEffect(() => {
-        const gsap_trig = ScrollTrigger.getAll();
+        /*const gsap_trig = ScrollTrigger.getAll();
         for (let trig of gsap_trig) {
             if (trig !== null) {
                 trig.kill();
             }
-        }
-
+        }*/
         const rerun = (head) => {
             let word = document.getElementById(head.id);
             let word1 = document.getElementById(head.id);
@@ -40,7 +36,7 @@ const Effects = ({id , title , color}) => {
         const heads = gsap.utils.toArray('.contain');
         heads.forEach(head => {
             ScrollTrigger.create({
-                id: `id-${head.id}`,
+                id: `${head.id}`,
                 trigger: head,
                 start: "top 80%",
                 end: "bottom 25%",
@@ -57,7 +53,7 @@ const Effects = ({id , title , color}) => {
                 <div className="box-con">
                     <div className="title">
                     <span className="block"></span>
-                    <h1 className="text" style={{ color: color || 'black' }}>{title}</h1>
+                    <h1 className="text" style={{ color: color || 'Black' }}>{title}</h1>
                         <div className="underline"></div>
                     </div>
                 </div>

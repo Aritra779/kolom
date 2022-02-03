@@ -5,60 +5,66 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Bengali = () => {
-    useEffect(() => {
 
-        const rerun = (head) => {
-            let word = document.getElementById(head.id);
-            if (word) {
-                word.classList.remove("invisi");
-                word.classList.add("visi");
+    useEffect(() => {
+        const gsap_trig = ScrollTrigger.getAll();
+        for (let trig of gsap_trig) {
+            if (trig['vars']['id'].includes("Eng")) {
+                trig.kill();
             }
         }
-        const scrap = (head) => {
-            let word = document.getElementById(head.id);
-            if (word) {
-                word.classList.remove("visi");
-                word.classList.add("invisi");
-            }
-        }
-        const hideme = (ghost, state) => {
-            let word = document.getElementById(ghost.id);
-            if (word && state === 0) {
-                word.classList.add("hideme");
-            }
-            else if (word && state === 1) {
-                word.classList.remove("hideme");
-            }
-        }
-        const heads = gsap.utils.toArray('.bck-img');
-        heads.forEach(head => {
-            ScrollTrigger.create({
-                id: `id-${head.id}`,
-                trigger: head,
-                start: "top 70%",
-                end: "bottom 25%",
-                //markers: true,
-                onEnter: () => rerun(head),
-                onLeave: () => scrap(head),
-                onEnterBack: () => rerun(head),
-                onLeaveBack: () => scrap(head),
+            const heads = gsap.utils.toArray('.bck-img');
+            heads.forEach(head => {
+                ScrollTrigger.create({
+                    id: `Home_Beng_${head.id}`,
+                    trigger: head,
+                    start: "top 70%",
+                    end: "bottom 25%",
+                    //markers: true,
+                    onEnter: () => rerun(head),
+                    onLeave: () => scrap(head),
+                    onEnterBack: () => rerun(head),
+                    onLeaveBack: () => scrap(head),
+                });
             });
-        });
-        const ghosts = gsap.utils.toArray('.ghost');
-        ghosts.forEach(ghost => {
-            ScrollTrigger.create({
-                id: `id-${ghost.id}`,
-                trigger: ghost,
-                start: "top 70%",
-                end: "bottom 25%",
-                //markers: true,
-                onEnter: () => hideme(ghost, 1),
-                onLeave: () => hideme(ghost, 0),
-                onEnterBack: () => hideme(ghost, 1),
-                onLeaveBack: () => hideme(ghost, 0),
+            const ghosts = gsap.utils.toArray('.ghost');
+            ghosts.forEach(ghost => {
+                ScrollTrigger.create({
+                    id: `Home_Beng_${ghost.id}`,
+                    trigger: ghost,
+                    start: "top 70%",
+                    end: "bottom 25%",
+                    //markers: true,
+                    onEnter: () => hideme(ghost, 1),
+                    onLeave: () => hideme(ghost, 0),
+                    onEnterBack: () => hideme(ghost, 1),
+                    onLeaveBack: () => hideme(ghost, 0),
+                });
             });
-        });
     }, []);
+    const rerun = (head) => {
+        let word = document.getElementById(head.id);
+        if (word) {
+            word.classList.remove("invisi");
+            word.classList.add("visi");
+        }
+    }
+    const scrap = (head) => {
+        let word = document.getElementById(head.id);
+        if (word) {
+            word.classList.remove("visi");
+            word.classList.add("invisi");
+        }
+    }
+    const hideme = (ghost, state) => {
+        let word = document.getElementById(ghost.id);
+        if (word && state === 0) {
+            word.classList.add("hideme");
+        }
+        else if (word && state === 1) {
+            word.classList.remove("hideme");
+        }
+    }
 
     return (
         <div id="beng" className="mt-3 mb-3" lang="bn">

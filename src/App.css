@@ -2,8 +2,22 @@
     font-family: Lipishree;
     src: url("./Materials/Fonts/Lipishree Unicode.ttf");
 }
+@font-face {
+    font-family : FleurDeLeah;
+    src : url("./Materials/Fonts/FleurDeLeah-Regular.ttf");
+}
+
+@font-face {
+    font-family : JosefinSlab;
+    src : url('./Materials/Fonts/JosefinSlab-Regular.ttf');
+}
+
+@font-face {
+    font-family : poppins;
+    src : url('./Materials/Fonts/Poppins-Light.ttf');
+}
 
 #About {
-    background-color: #dbe0ba;
+    background-color: #e4e5ed;
 }
 

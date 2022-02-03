@@ -21,14 +21,14 @@
     transition-delay: 0s;
 }
 
-#Credits .box h3 {
-    padding: 5% 5% 0 5%;
-    font-family: 'Fleur De Leah', cursive;
-    font-size: 85px;
-    margin: 0;
-    font-weight: 400;
-    width: 100%;
-}
+    #Credits .box h3 {
+        padding: 5% 5% 0 5%;
+        font-family: FleurDeLeah;
+        font-size: 85px;
+        margin: 0;
+        font-weight: 400;
+        width: 100%;
+    }
 @media (max-width : 250px){
     #Credits .box h3{
         font-size : 70px;

@@ -10,7 +10,7 @@ const turn = (e, book , page) => {
 const open = (content) => {
     let modal = document.getElementById('Modal');
     if (modal) {
-        modal = modal .childNodes[0].childNodes[0].childNodes[1];
+        modal = modal.childNodes[0].childNodes[0].childNodes[1];
     }
     if (content) {
         modal.innerHTML = content;
@@ -22,7 +22,7 @@ const Page = forwardRef((props, ref) => {
     return (
         <div className="page" ref={ref}>
             <div className="page-content">
-                <img className="page-image" src={props.img} alt={`Page Number - ${props.key}`} />
+                <img className="page-image" src={props.img} alt={`Page Number - ${props.index.replace('.','')}`} />
                 <div>
                     {props.data && props.data.map(item => {
                         if (item.page) {
@@ -112,7 +112,6 @@ const importAllData = (r) => {
 }
 
 const FlipBook = ({ content }) => {
-    let count = 0;
     const [page, setPage] = useState(0);
     const [totalPage, setTotalPage] = useState(0);
     const book = useRef();
@@ -168,7 +167,7 @@ const FlipBook = ({ content }) => {
     return (
         <section>
             <Effects
-                id="fourth"
+                id="Archive_FlipBook"
                 title={`Edition ${content} Book`}
             />
             <article id="book">
@@ -189,23 +188,26 @@ const FlipBook = ({ content }) => {
                     ref={book}
                     className="flip-book"
                 >
+
                     {
-                    Object.entries(images).map(image => {
+                        Object.entries(images).map(image => {
                             if (data[image[0]]) {
                                 return (
                                     <Page
-                                        key={Object.entries(images).indexOf(image)}
-                                        img={images[image[0]]['default']}
+                                        key={image[0]}
+                                        img={image[1]}
                                         data={data[image[0]]}
                                         book={book}
+                                        index={image[0]}
                                     />
                                 );
                             }
                             else {
                                 return (
                                     <Page
-                                        key={Object.entries(images).indexOf(image)}
-                                        img={images[image[0]]['default']}
+                                        key={image[0]}
+                                        img={image[1]}
+                                        index={image[0]}
                                     />
                                 );
                             }
@@ -215,9 +217,24 @@ const FlipBook = ({ content }) => {
                     
                 </HTMLFlipBook>
                 <div className="navigation row">
-                    <span className="col-sm-4 g-2"><button className={`btn btn-outline-success ${page === 0 ? 'disabled' : ''}`} type="button" onClick={prevButtonClick} >Previous Page</button></span>
+                    <span className="col-sm-4 g-2">
+                        {
+                            page === 0 ?
+                                ''
+                            :
+                            <button className='btn btn-outline-success' type="button" onClick={prevButtonClick} >Previous Page</button>
+                        }
+                        
+                    </span>
                     <span className="col-sm-4 g-2">[<span>{page + 1}</span> of <span>{totalPage}</span>]</span>
-                    <span className="col-sm-4 g-2"><button className={`btn btn-outline-success ${page === totalPage - 1 ? 'disabled' : ''}`} type="button" onClick={nextButtonClick}>Next Page</button></span>
+                    <span className="col-sm-4 g-2">
+                        {
+                            page === totalPage - 1 ?
+                                ''
+                            :
+                                <button className="btn btn-outline-success" type="button" onClick={nextButtonClick}>Next Page</button>
+                        }
+                    </span>
                 </div>
                
                 <div className="modal fade" id="Modal" tabIndex="-1" aria-labelledby="ModalLabel" aria-hidden="true">

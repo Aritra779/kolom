@@ -7,34 +7,17 @@ gsap.registerPlugin(ScrollTrigger);
 const English = () => {
 
     useEffect(() => {
-
-        const rerun = (head) => {
-            let word = document.getElementById(head.id);
-            if (word) {
-                word.classList.remove("invisi");
-                word.classList.add("visi");
-            }
-        }
-        const scrap = (head) => {
-            let word = document.getElementById(head.id);
-            if (word) {
-                word.classList.remove("visi");
-                word.classList.add("invisi");
-            }
-        }
-        const hideme = (ghost, state) => {
-            let word = document.getElementById(ghost.id);
-            if (word && state === 0) {
-                word.classList.add("hideme");
-            }
-            else if (word && state === 1) {
-                word.classList.remove("hideme");
+        const gsap_trig = ScrollTrigger.getAll();
+        for (let trig of gsap_trig) {
+            if (trig['vars']['id'].includes("Beng")) {
+                trig.kill();
             }
         }
         const heads = gsap.utils.toArray('.bck-img');
         heads.forEach(head => {
+            console.log(head);
             ScrollTrigger.create({
-                id: `id-${head.id}`,
+                id: `Home_Eng_${head.id}`,
                 trigger: head,
                 start: "top 70%",
                 end: "bottom 25%",
@@ -48,7 +31,7 @@ const English = () => {
         const ghosts = gsap.utils.toArray('.ghost');
         ghosts.forEach(ghost => {
             ScrollTrigger.create({
-                id: `id-${ghost.id}`,
+                id: `Home_Eng_${ghost.id}`,
                 trigger: ghost,
                 start: "top 70%",
                 end: "bottom 25%",
@@ -60,6 +43,29 @@ const English = () => {
             });
         });
     }, []);
+    const rerun = (head) => {
+        let word = document.getElementById(head.id);
+        if (word) {
+            word.classList.remove("invisi");
+            word.classList.add("visi");
+        }
+    }
+    const scrap = (head) => {
+        let word = document.getElementById(head.id);
+        if (word) {
+            word.classList.remove("visi");
+            word.classList.add("invisi");
+        }
+    }
+    const hideme = (ghost, state) => {
+        let word = document.getElementById(ghost.id);
+        if (word && state === 0) {
+            word.classList.add("hideme");
+        }
+        else if (word && state === 1) {
+            word.classList.remove("hideme");
+        }
+    }
 
     return (
         <div id="eng" className="mt-3 mb-3" lang="en">

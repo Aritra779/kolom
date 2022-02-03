@@ -5,6 +5,7 @@ import Effects from '../../Effects/Effects';
 import './Donations.css';
 
 
+
 const Donations = () => {
     const [option, setOption] = useState(0);
 
@@ -32,7 +33,7 @@ const Donations = () => {
     return (
         <div className="container" id = "Donations">
             <Effects
-                id="AboutDonations"
+                id="About_Donations"
                 title="Donations"
             />
             <div className="mt-5 mb-5" style={{ fontStyle: 'italic', fontSize: '1.2em', textAlign: 'justify' }}>

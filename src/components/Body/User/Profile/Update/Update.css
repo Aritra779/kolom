@@ -1,0 +1,85 @@
+#UpdateInfo{
+    overflow : auto;
+}
+
+#UpdateInfo .formbg{
+    background-color : rgba(255,255,255,0.1);
+    border-radius : 20px;
+}
+#UpdateInfo .formbg .profilepic-container{
+    position : relative;
+}
+#UpdateInfo .formbg .profilepic{
+    height : 150px;
+    width : 150px;
+    border-radius : 50%;
+    border : 6px solid rgba(0,0,0,0.3);
+    background-image : url("../../../../../Images/Team/aritra.webp");
+    background-position : center center;
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-origin :border-box;
+}
+
+#UpdateInfo .formbg .profilepic:hover{
+    opacity : 0.4;
+}
+
+#UpdateInfo .formbg .is-invalid {
+    background-color: #EFB4B4;
+}
+
+#UpdateInfo .formbg .is-valid {
+    background-color: #accd8f;
+}
+
+#UpdateInfo #PasswordForm .showIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top : 7px;
+    width: 45px;
+    height: 45px;
+    padding: 1% 0 1%;
+    border-radius: 50%;
+}
+#UpdateInfo #PasswordForm .showIcon:focus {
+    box-shadow: none;
+    background: radial-gradient(#FCFFFD, #49BAE1);
+}
+
+#UpdateInfo #PasswordForm input {
+    width: 85%;
+}
+@media(min-width : 992px) {
+    #UpdateInfo #PasswordForm input {
+        width: 90%;
+    }
+    #UpdateInfo #PasswordForm .showIcon {
+        width: 55px;
+        height: 55px;
+        margin-top: 1px;
+    }
+}
+@media(max-width : 770px){
+    #UpdateInfo #PasswordForm input{
+        width : 80%;
+    }
+}
+@media(max-width : 400px) {
+    #UpdateInfo #PasswordForm input {
+        width: 70%;
+    }
+}
+@media(max-width : 300px) {
+    #UpdateInfo #PasswordForm input {
+        width: 70%;
+    }
+    #UpdateInfo #PasswordForm .showIcon {
+        width: 35px;
+        height: 35px;
+        margin-top :11px;
+
+    }
+}
+

@@ -1,0 +1,95 @@
+#Profile .targettedrow {
+padding: 0 8%;
+}
+
+@media (max-width : 350px) {
+#Profile .left-sidebar .inner .user-profile .user-info .user-location .locationIconWrapper {
+    display: none;
+}
+
+#Profile .targettedrow {
+    padding: 0 2%;
+}
+}
+
+
+#Profile .card-container {
+overflow: hidden;
+min-height: 400px;
+}
+
+#Profile .card-bg {
+position: absolute;
+width: 100%;
+height: 100%;
+filter: blur(2px);
+}
+
+#Profile .card-container .bg1 {
+background: url("../../../../../Images/landscape.webp");
+background-size: cover;
+background-position: center;
+}
+
+#Profile .card-container .bg2 {
+background: url("../../../../../Images/landscape2.webp");
+background-size: cover;
+background-position: center;
+}
+
+#Profile .card-container .bg3 {
+background: url("../../../../../Images/landscape3.webp");
+background-size: cover;
+background-position: center;
+}
+
+#Profile .card-container:hover .card-bg {
+-webkit-animation: eye-focus 3s ease-in infinite alternate, focus-shift 3s ease-in infinite alternate;
+animation: eye-focus 3s ease-in infinite alternate, focus-shift 3s ease-in infinite alternate;
+}
+
+@keyframes eye-focus {
+0% {
+    -webkit-filter: blur(5px);
+}
+
+100% {
+    -webkit-filter: blur(0);
+}
+}
+
+@keyframes focus-shift {
+0% {
+    transform: scale(1);
+}
+
+100% {
+    transform: scale(1.2);
+}
+}
+
+#Profile .card-container .card-content {
+z-index: 1;
+height: 100%;
+}
+
+#Profile .card-container .card-content .card-header {
+    background-color: rgba(255,255,255,0.5);
+}
+
+#Profile .card-container .card-content .card-footer {
+    background-color: rgba(255,255,255,0.2);
+}
+
+#Profile .card-container .card-content .card-body {
+    position: relative;
+}
+
+#Profile .card-container .card-content .card-text {
+    transition: 0.5s all ease-in;
+    opacity: 0.6;
+}
+
+#Profile .card-container:hover .card-content .card-text {
+opacity: 1;
+}

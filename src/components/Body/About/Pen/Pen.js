@@ -5,7 +5,7 @@ const Pen = () => {
     return (
         <div id = "Pen">
             <Effects
-                id="AboutPen"
+                id="About_Pen"
                 title="Editors' Corner"
             />
             <div className="container pb-5" lang = "bn">
