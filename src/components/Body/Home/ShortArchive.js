@@ -19,7 +19,8 @@ const ShortArchive = () => {
                             <div>
                                 <p>This entire initiative wouldn't have been possible without all of the people who came forward to help us with some of theirs wonderful creations.</p>
                                 <p>Throughout all 6 of our editions we've had some constant contributors. We're eternally thankful to them.</p>
-                                <button id="b1" className="button"><Link to={"/archive/#Archive_Contributors"} style={{ textDecoration: 'none', color : 'white' }}>Click Here</Link></button>
+                                <span style={{position : 'relative'}}>
+                                <Link to={"/archive/#Archive_Contributors"} style={{ textDecoration: 'none', color : 'white'}}><span>Click Here</span></Link></span>
                             </div>
                         </div>
                     </div>
@@ -33,7 +34,7 @@ const ShortArchive = () => {
                             <div>
                                 <p>Over the past few years we've had the opputunity to publish a to total of 6 editions of our magazine.</p>
                                 <p>All editions of our magazine is available for free to people who might be interested in them.</p>
-                                <button id = "b2" className="button button-b"><Link to={"/archive/#Archive_Editions"} style={{ textDecoration: 'none', color: 'white' }}>Click Here</Link></button>
+                                <span style={{position : 'relative'}}><Link to={"/archive/#Archive_Editions"} style={{ textDecoration: 'none', color: 'white' }}><span>Click Here</span></Link></span>
                             </div>
                         </div></div>
 				</div>

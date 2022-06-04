@@ -11,6 +11,7 @@ const LatestEdition = () => {
             <div className="container">
                 <Options
                     content={6}
+                    Effect_id = "Home_Latest"
                 />
             </div>
         </div>

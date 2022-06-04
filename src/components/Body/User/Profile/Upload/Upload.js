@@ -1,4 +1,4 @@
-﻿import UploadContent from './UploadContent';
+import UploadContent from './UploadContent';
 import './Upload.css';
 
 const Upload = () => {

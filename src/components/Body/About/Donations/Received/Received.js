@@ -1,4 +1,4 @@
-﻿import Effects from '../../../Effects/Effects';
+import Effects from '../../../Effects/Effects';
 import doc from './Donation.json';
 import party from 'party-js';
 const List = ({ edition }) => {
@@ -25,7 +25,7 @@ const List = ({ edition }) => {
                             let divId = edition['volume'].replace('Edition ', '') + '_' + edition['contributors'].indexOf(donor);
                             return (
                                 <div id={divId} key={donor['name']} className="col" onClick={() => runParty(divId)}>
-                                    <article className="donationList__profile">
+                                    <article className="donationList__profile"  tabIndex = "0" onKeyDown={(e) => {e.key === "Enter" && runParty(divId)}}>
                                         <span className="donationList__name" lang = "bn">{ donor['name']}</span>
                                         <span className="donationList__value">{ donor['amount']}<span>INR</span></span>
                                     </article>

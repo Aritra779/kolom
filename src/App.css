@@ -5,19 +5,22 @@
 @font-face {
     font-family : FleurDeLeah;
     src : url("./Materials/Fonts/FleurDeLeah-Regular.ttf");
+    font-display: fallback;
 }
 
 @font-face {
     font-family : JosefinSlab;
     src : url('./Materials/Fonts/JosefinSlab-Regular.ttf');
+    font-display: fallback;
 }
 
 @font-face {
     font-family : poppins;
     src : url('./Materials/Fonts/Poppins-Light.ttf');
+    font-display: fallback;
 }
 
 #About {
-    background-color: #e4e5ed;
+    background-color: #dadfb9;
 }
 

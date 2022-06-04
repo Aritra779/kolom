@@ -1,4 +1,4 @@
-﻿import Effects from '../../Effects/Effects';
+import Effects from '../../Effects/Effects';
 import './Editors.css';
 
 

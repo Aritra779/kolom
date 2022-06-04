@@ -26,7 +26,7 @@ footer .right .content {
     transform : translate(-50%);
 }
 
-footer #control span {
+footer #control .line span {
     display : inline-block;
     font-family : Lipishree;
     font-size: 2em;
@@ -43,8 +43,20 @@ footer .info{
     font-family : 'Agency FB';
     color : white;
 }
-footer .info span{
-    margin-right :3%;
+footer .info .socialIcon{
+    border-radius: 50%;
+    display: inline-block;
+    height: 36px;
+    margin: 5%;
+}
+
+footer .info .socialIcon.facebook:hover{
+  color : #4267B2;
+  background-color: #fff;
+}
+
+footer .info .socialIcon.twitter:hover{
+  color : #1DA1F2;
 }
 
 footer .info a{
@@ -73,7 +85,7 @@ footer .creator div {
     text-align : center;
 }
 
-    footer .creator div h1 {
+    footer .creator div h2 {
         display : inline-block;
         margin: 0px;
         color: #fff;
@@ -81,26 +93,35 @@ footer .creator div {
         font-size: 2em;
         cursor : pointer;
     }
-        footer .creator div h1 span {
+    
+        footer .creator div h2 span {
             display : inline-block;
             opacity : 0;
             color: #fe3a7d;
             transition: linear 0.8s 0.5s;
         }
 
-        footer .creator div h1 .stay{
-            opacity : 1!important;
-            color : white!important;
+        footer .creator div h2 .stay{
+            opacity : 1;
+            color : white;
         }
-        footer .creator div h1 #MoveLeft{
+        footer .creator div h2 #MoveLeft{
             transform : translate(200%);
+        }
+        footer .creator div h2:hover span{
+          color : #fe3a7d;
         }
 
 footer .description {
-    display : none;
-    text-align : justify;
+  overflow: hidden;
+  text-align: center;
+    max-height: 0;
     color : white;
     transition: linear 0.8s 0.5s;
+}
+
+footer .visibleDescription{
+  max-height: 500px;
 }
 
 footer .copyright{
@@ -108,4 +129,266 @@ footer .copyright{
     font-family : Lipishree;
     text-align : center;
     color : aqua;
+    margin-top: 1em;
 }
+
+/*Contact Form*/
+.contactbutton {
+  margin: 5% 0;
+  -webkit-box-shadow: 1px 1px 0 0 #832032,2px 2px 0 0 #832032,3px 3px 0 0 #832032;
+  box-shadow: 1px 1px 0 0 #832032,2px 2px 0 0 #832032,3px 3px 0 0 #832032;
+  width: 100%;
+}
+
+.contactbutton:hover {
+  -webkit-box-shadow: 1px 1px 0 0 #832032,0px 0px 0 0 #832032,0px 0px 0 0 #832032;
+  box-shadow: 1px 1px 0 0 #832032,0px 0px 0 0 #832032,0px 0px 0 0 #832032;
+}
+
+#checkcontact{
+  position: absolute;
+  display : none;
+}
+
+.sec {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  max-height: 0px;
+  -webkit-transition: all linear 1s;
+  -moz-transition: all linear 1s;
+  -o-transition: all linear 1s;
+  -ms-transition: all linear 1s;
+  transition: all linear 1s;
+}
+
+.sec.ExpandedForm{
+  max-height: 1000px;
+}
+
+.sec .centered {
+    margin: 1rem auto;
+}
+
+.sec .letter{
+  perspective: 60rem;
+}
+.sec .side {
+    background-color: #f1f1cf;
+  }
+  .sec .side:nth-of-type(1) {
+      padding: 2rem ;
+      border-radius: 1rem 1rem 0 0;
+    }
+  .sec .side.side:nth-of-type(2) {
+      padding:0 2rem 2rem;
+      border-radius: 0 0 1rem 1rem;
+      text-align: right;
+    }
+
+.sec h1 {
+  font-family : 'Agency FB';
+  color: #fe3a7d;
+}
+
+.sec textarea {
+    width: 100%;
+    min-height: 8rem;
+    background-color: #fff;
+    appearance: none;
+    resize: none;
+   }
+
+.sec textarea, input {
+  line-height: 1.5rem;
+}
+
+.sec input, .sec button {
+ width: 70%;
+ appearance: none;
+}
+
+.sec .side input, .sec .side textarea{
+  border: 1px solid transparent;
+}
+
+.sec .side input:focus , .sec .side textarea:focus{
+  outline: none;
+}
+.sec .side p{
+  position: relative;
+}
+.sec .side span {
+  position: absolute;
+  width: 70%;
+  left: 30%;
+  background-color: #fc2f70;
+  transition: transform 0.3s ease;
+}
+
+.sec .side textarea ~ span{
+  width: 100%;
+  left: 0;
+}
+
+.sec .side .bottom, .sec .side .top {
+  height: 1px;
+  transform: scaleX(0);
+}
+
+.sec .side .left,
+.sec .side .right {
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  transform: scaleY(0);
+}
+.sec .side .right{
+  left: 100%;
+}
+
+.sec .side .bottom {
+  bottom: 0;
+  transform-origin: bottom right;
+}
+
+.sec .side input:focus ~ .bottom, .sec .side textarea:focus ~ .bottom {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.sec .side .right {
+  right: 0;
+  transform-origin: top right;
+  transition-delay: 0.31s;
+}
+
+.sec .side input:focus ~ .right, .sec .side textarea:focus ~ .right {
+  transform-origin: bottom right;
+  transform: scaleY(1);
+}
+
+.sec .side .top {
+  top: 0;
+  transform-origin: top left;
+  transition-delay: 0.62s;
+}
+
+.sec .side input:focus ~ .top, .sec .side textarea:focus ~ .top {
+  transform-origin: top right;
+  transform: scaleX(1);
+}
+
+.sec .side .left {
+  transform-origin: bottom left;
+  transition-delay: 0.93s;
+}
+
+.sec .side input:focus ~ .left, .sec .side textarea:focus ~ .left {
+  transform-origin: top left;
+  transform: scaleY(1);
+}
+
+.sec .envelope {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30px;
+  margin: auto;
+}
+.sec .envelope.front {
+  width: 10rem;
+  height: 6rem;
+  border-radius: 0 0 1rem 1rem;
+  overflow: hidden;
+  opacity: 0;
+}
+.sec .envelope.front::before, .sec .envelope.front::after {
+  position: absolute;
+  display: block;
+  width: 12rem;
+  height: 6rem;
+  background-color: #e9dc9d;
+  transform: rotate(30deg);
+  transform-origin: 0 0;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  content: '';
+}
+.sec .envelope.front::after{
+  right: 0;
+  transform: rotate(-30deg);
+  transform-origin: 100% 0;
+}
+.sec .envelope.back {
+  top: -2rem;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0;
+}
+.sec .envelope.back::before {
+    display: block;
+    height: 10rem;
+    background-color: #e9dc9d;
+    border-radius: 1rem;
+    content: '';
+    transform: scaleY(0.6) rotate(45deg)
+  }
+
+.sec.sent .letter {
+    -webkit-animation: scaleLetter 1s forwards ease-in;
+    animation: scaleLetter 1s forwards ease-in
+  }
+.sec.sent .side:nth-of-type(1) {
+    transform-origin: 0 100%;
+    -webkit-animation: closeLetter 0.66s forwards ease-in;
+    animation: closeLetter 0.66s forwards ease-in;
+  }
+.sec.sent .side:nth-of-type(1) h1, .sec.sent .side:nth-of-type(1) textarea , .sec.sent .side:nth-child(2){
+    -webkit-animation: fadeOutText 0.66s forwards linear;
+    animation: fadeOutText 0.66s forwards linear;
+  }
+
+.sec.sent .envelope {
+    -webkit-animation: fadeInEnvelope 0.5s 1.33s forwards ease-out;
+    animation: fadeInEnvelope 0.5s 1.33s forwards ease-out;
+  }
+
+@-webkit-keyframes closeLetter {
+   50% {transform: rotateX(-90deg);}
+   100% {transform: rotateX(-180deg);}
+}
+@keyframes closeLetter {
+   50% {transform: rotateX(-90deg);}
+   100% {transform: rotateX(-180deg);}
+}
+@-webkit-keyframes fadeOutText {
+   49% {opacity: 1;}
+   50% {opacity: 0;}
+   100% {opacity: 0;}
+}
+@keyframes fadeOutText {
+   49% {opacity: 1;}
+   50% {opacity: 0;}
+   100% {opacity: 0;}
+}
+@-webkit-keyframes fadeInEnvelope {
+  0% {opacity: 0; transform: translateY(8rem);}
+  100% {opacity: 1; transform: translateY(4.5rem);}
+}
+@keyframes fadeInEnvelope {
+  0% {opacity: 0; transform: translateY(8rem);}
+  100% {opacity: 1; transform: translateY(4.5rem);}
+}
+@-webkit-keyframes scaleLetter {
+  66% {transform: translateY(-9rem) scale(0.5, 0.5);}
+  90% {transform: translateY(-9rem) scale(0.4, 0.4);}
+  100%{transform: translateY(-9rem) scale(0.33, 0.3);}
+}
+@keyframes scaleLetter {
+  66% {transform: translateY(-9rem) scale(0.5, 0.5);}
+  90% {transform: translateY(-9rem) scale(0.4, 0.4);}
+  100%{transform: translateY(-9rem) scale(0.33, 0.3);}
+}
+

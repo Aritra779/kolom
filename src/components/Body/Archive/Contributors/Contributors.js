@@ -1,4 +1,4 @@
-﻿import './Contributors.css';
+import './Contributors.css';
 import Effects from '../../Effects/Effects';
 
 

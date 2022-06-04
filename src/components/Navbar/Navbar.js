@@ -1,4 +1,4 @@
-﻿
+
 import { useEffect } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import "./Navbar.css";
@@ -37,7 +37,7 @@ const Navbar = () => {
                     <div className="logo-name">
 
                         <NavLink to={"/home"} className="navbar-brand site-name" tabIndex = "-1">
-                            <span lang="bn">কলম</span>
+                            <span lang="bn">স্বাধীন কলম</span>
                         </NavLink>
                 </div>
                 <button
@@ -57,8 +57,8 @@ const Navbar = () => {
                                 <NavLink to={"/home"} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} aria-current="page" >
                                     <div className = "d-flex justify-content-center align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#B5CE23" className="bi bi-house-fill me-2" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-                                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                                            <path fillRule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                            <path fillRule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
                                         </svg>
                                         <span>Home</span>
                                     </div>
@@ -84,7 +84,7 @@ const Navbar = () => {
                                     </div>
                                 </NavLink>
                         </li>
-                        <li className="nav-item">
+                            {/*<li className="nav-item">
                                 <NavLink to={"/user"} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} >
                                     <div className="d-flex justify-content-center align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#B5CE23" className="bi bi-person-circle me-2" viewBox="0 0 16 16">
@@ -94,7 +94,7 @@ const Navbar = () => {
                                         <span>User</span>
                                     </div>
                                 </NavLink>
-                        </li>
+                        </li>*/}
                     </ul>
             </div>
             </div>

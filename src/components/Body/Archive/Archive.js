@@ -1,4 +1,3 @@
-import './Archive.css';
 import { useLocation } from 'react-router-dom';
 import { useEffect} from 'react';
 import Carousel from './Carousel/Carousel';

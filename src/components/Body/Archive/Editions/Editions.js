@@ -1,4 +1,4 @@
-﻿import { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import './Editions.css';
 import Effects from '../../Effects/Effects';
 import Options from './Options';
@@ -37,7 +37,7 @@ const Editions = () => {
                         return (
                             <div key={date} id={`edtn${dates.indexOf(date) + 1}`} className="col">
                             <div className="card h-100">
-                                    <div className="bg-img d-none d-sm-block" onClick={() => expand(dates.indexOf(date) + 1)}></div>
+                                    <div className="bg-img d-none d-sm-block" onClick={() => expand(dates.indexOf(date) + 1)} tabIndex = "0" onKeyDown={(e) => {e.key === 'Enter' && expand(dates.indexOf(date) + 1)}}></div>
                                 <div className="card-body">
                                         <h5 className="card-title text-decoration-underline" onClick={() => expand(dates.indexOf(date) + 1)}>Edition {dates.indexOf(date) + 1}</h5>
                                     <p className="card-text">{date}</p>

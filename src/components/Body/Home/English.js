@@ -1,4 +1,4 @@
-﻿import { useEffect } from 'react';
+import { useEffect } from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -15,7 +15,6 @@ const English = () => {
         }
         const heads = gsap.utils.toArray('.bck-img');
         heads.forEach(head => {
-            console.log(head);
             ScrollTrigger.create({
                 id: `Home_Eng_${head.id}`,
                 trigger: head,
@@ -115,7 +114,7 @@ const English = () => {
                 <div className="ghost ghost-bck" id="e6"></div>
                 <div className="bck-img invisi" id='edn6'></div>
                 <p>
-                    Now it's 2021. We've arrived at out latest edition i.e., Edition 6.
+                    Now it's 2021. We've arrived at out latest edition i.e., Edition 6. We're immensely grateful to all the people who've stood beside us so far throughout our journey. Without your active support it was impossible to walk on this path. But due to some unavoidable reasons we've decided to take a step back. So our next edition will be released during Durga Puja, 2022 and not during summer, 2022. We'll be counting on your support with our whole heart.
                 </p>
             </div>
             <div className="para">

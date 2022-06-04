@@ -15,8 +15,8 @@ const ShortAbout = () => {
 				<div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-5 gx-md-5">
 					<div className="col">
 						<div className = "list h-100" id = "frst">
-							<h2>06</h2>
-							<h3>Editions</h3>
+							<h3>06</h3>
+							<h4>Editions</h4>
 							<p>
 								We've released a total of 6 editions since the 2017.
 							</p>
@@ -26,8 +26,8 @@ const ShortAbout = () => {
 					</div>
 					<div className="col">
 						<div className = "list h-100" id = "scnd">
-							<h2>09</h2>
-						<h3>Editors</h3>
+							<h3>09</h3>
+							<h4>Editors</h4>
 						<p>
 							Over the years we've had 9 people gracefully volunteering for editorial works. Without them this entire magazine wouldn't be where it is today.
 						</p>
@@ -36,8 +36,8 @@ const ShortAbout = () => {
 					</div>
 					<div className="col">
 						<div className = "list h-100" id = "thrd">
-							<h2>02</h2>
-							<h3>Donations</h3>
+							<h3>02</h3>
+							<h4>Donations</h4>
 							<p>
 								Since edition 4 the magazine is being distributed in exchange of very small amount of money which goes directly to some organizations involded in social care.
 							</p>
@@ -46,8 +46,8 @@ const ShortAbout = () => {
 					</div>
 					<div className="col">
 						<div className = "list h-100" id = "frth">
-							<h2>08</h2>
-							<h3>Editors' Pen</h3>
+							<h3>08</h3>
+							<h4>Editors' Pen</h4>
 							<p>
 								From coming up with the idea of pubdivshing a magazine to executing the task each and every year our editors have gone through a lot of works to make this happen. They have shared this experience through some words.
 							</p>

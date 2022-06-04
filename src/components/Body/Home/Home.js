@@ -1,5 +1,4 @@
-﻿import { useEffect, lazy, Suspense} from 'react';
-import { Parallax } from "react-parallax";
+import { useEffect, lazy, Suspense} from 'react';
 import "./Home.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,6 +8,7 @@ import img1 from "../../../Images/img-01.webp";
 import img2 from "../../../Images/img-02.webp";
 import img3 from "../../../Images/img-03.webp";
 import img4 from "../../../Images/img-04.webp";
+import { ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,63 +44,52 @@ const Home = () => {
     }
 
     return (
+        <ParallaxProvider>
         <div className="main" id="Home">
-            <Suspense fallback={<Loading/>}>
-                <Parallax bgImage={img1} bgImageAlt="Background Image 1" strength={500} bgImageStyle={{ width: '100vw' }}>
+            <Suspense fallback={<Loading />}>
+                <ParallaxBanner
+                    layers={[{ image: img1, speed: -30 }]}
+                    className="aspect-[2/1]" style={{ height : 500 }}
+                >
                     <div style={{ height: 500 }}>
-                        <div id = "ani">
-                            <h2 className="animate" id="title" onClick={click} lang = "bn"> আমাদের স্বাধীন কলম </h2>
+                        <div id="ani">
+                            <h2 className="animate" id="title" onClick={click} lang="bn"> আমাদের স্বাধীন কলম </h2>
                         </div>
                     </div>
-                </Parallax>
+                </ParallaxBanner>
+
                 <section id = "Intro" className="container-fluid intro" style={{ padding: 0 }}>
                     <Introduction />
                 </section>
             </Suspense>
             <Suspense fallback={<Loading/>}>
-                <Parallax bgImage={img3} strength={200}>
-                    <div style={{ height: 500 }}/>
-                </Parallax>
                 <section className="container-fluid intro" style={{ padding: 0 }}>
+                    <ParallaxBanner
+                        layers={[{ image: img2, speed: 30 }]}
+                        className="aspect-[2/1]" style={{ height: 500 }}
+                    />
                     <ShortAbout />
                 </section>
             </Suspense>
             <Suspense fallback={<Loading/>}>
-                <Parallax bgImage={img2} strength={300}>
-                    <div style={{ height: 500 }}/>
-                </Parallax>
-                <section className="container-fluid intro" id = "overyears">
+
+                <section className="container-fluid intro" id="overyears">
+                    <ParallaxBanner
+                        layers={[{ image: img3, speed: -30 }]}
+                        className="aspect-[2/1]" style={{ height: 500 }}
+                    />
                     <ShortArchive/>
                 </section>
             </Suspense>
-            <Suspense fallback={<Loading/>}>
-                <Parallax
-                    bgImage={img4}
-                    strength={200}
-                    renderLayer={(percentage) => (
-                        <div>
-                            <div
-                                style={{
-                                    position: "absolute",
-                                    background: `rgba(255, 125, 0, ${percentage * 1})`,
-                                    left: "50%",
-                                    top: "50%",
-                                    borderRadius: "50%",
-                                    transform: "translate(-50%,-50%)",
-                                    width: percentage * 500,
-                                    height: percentage * 500
-                                }}
-                            />
-                        </div>
-                    )}
-                >
-                    <div style={{height: 500}}>
-                        <div className="overimg1">Edition 6</div>
-                    </div>
-                </Parallax>
+            <Suspense fallback={<Loading />}>
+                <ParallaxBanner
+                    layers={[{ image: img4, speed: 30 }]}
+                    className="aspect-[2/1]" style={{ height: 500 }}
+                />
                 <LatestEdition />
             </Suspense>
             </div>
+        </ParallaxProvider>
     );
 }
 

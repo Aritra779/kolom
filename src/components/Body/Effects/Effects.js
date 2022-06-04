@@ -53,7 +53,7 @@ const Effects = ({id , title , color}) => {
                 <div className="box-con">
                     <div className="title">
                     <span className="block"></span>
-                    <h1 className="text" style={{ color: color || 'Black' }}>{title}</h1>
+                    <h2 className="text" style={{ color: color || 'Black' }}>{title}</h2>
                         <div className="underline"></div>
                     </div>
                 </div>

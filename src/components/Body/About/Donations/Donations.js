@@ -42,7 +42,7 @@ const Donations = () => {
             <div id="Donations" className="mt-5 mb-5 pt-3 pb-3">
                 <div className="row row-cols-1 row-cols-md-2 g-4">
                     <div className="col">
-                        <div className="card h-100" onClick={() => scroll('Made')}>
+                        <div className="card h-100" onClick={() => scroll('Made')} tabIndex = "0" onKeyDown={(e) =>{e.key === 'Enter' && scroll('Made')}}>
                             <div className= "bg-img" id = "D1"></div>
                             <div className="card-img-overlay">
                                 <h5 className="card-title">Donations Made</h5>
@@ -51,7 +51,7 @@ const Donations = () => {
                         </div>
                     </div>
                     <div className="col">
-                        <div className="card h-100" onClick={() => scroll('Received')}>
+                        <div className="card h-100" onClick={() => scroll('Received')} tabIndex = '0' onKeyDown={(e) =>{e.key === 'Enter' && scroll('Received')}}>
                             <div className = "bg-img" id = "D2"></div>                            <div className="card-img-overlay">
                                 <h5 className="card-title">Donations Received</h5>
                             </div>
