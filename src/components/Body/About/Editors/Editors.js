@@ -64,10 +64,10 @@ const Editors = () => {
                                         <div className="col">
                                             <div className="container">2017, 2020 -  present</div>
                                         </div>
-                                        <div className="col d-none d-sm-block d-md-none d-lg-block">
+                                        <div className="col">
                                             <div className="container">Special Assistance</div>
                                         </div>
-                                        <div className="col d-none d-sm-block d-md-none d-lg-block">
+                                        <div className="col">
                                             <div className="container">2018</div>
                                         </div>
                                         <div className="col">
@@ -150,7 +150,7 @@ const Editors = () => {
                         <div className="card ">
                             <div className="bg-img" id="E5"></div>
                             <div className="card-img-overlay">
-                                <h5 className="card-title" style={{ color: 'white' }}>Ipshita Sardar</h5>
+                                <h5 className="card-title" style={{ color: 'white' }}>Ipsita Sardar</h5>
                                 <h6 style={{color : 'white'}}>Positions and Responsibilities</h6>
                                 <div className="card-text">
                                     <div className="row row-cols-2 gy-2">
@@ -198,10 +198,10 @@ const Editors = () => {
                                         <div className="col">
                                             <div className="container">2017</div>
                                         </div>
-                                        <div className="col d-none d-md-block">
+                                        <div className="col">
                                             <div className="container">Special assistance</div>
                                         </div>
-                                        <div className="col d-none d-md-block">
+                                        <div className="col">
                                             <div className="container">2018</div>
                                         </div>
                                     </div>
@@ -214,7 +214,7 @@ const Editors = () => {
                         <div className="card ">
                             <div className="bg-img" id="E7"></div>
                             <div className="card-img-overlay">
-                                <h5 className="card-title" style={{ color: 'white' }}>Atreyee Halder</h5>
+                                <h5 className="card-title" style={{ color: 'white' }}>Atreyee Haldar</h5>
                                 <h6 style={{ color: 'white' }}>Positions and Responsibilities</h6>
                                 <div className="card-text">
                                     <div className="row row-cols-2 gy-2">
