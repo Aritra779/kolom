@@ -1,0 +1,153 @@
+#Profile {
+    background: #0a1022;
+    overflow: hidden;
+    min-height : 900px;
+    position : relative;
+    padding-top : 75px;
+}
+@media(max-width : 300px){
+    #Profile{
+        padding-top : 55px;
+    }
+}
+
+#Profile .left-sidebar {
+    background: #0a1022;
+    width: 50%;
+    max-width: 500px;
+    height : 100%;
+    border-right: 1px solid #1a233d;
+    position: absolute;
+    transition: all 0.5s;
+    box-shadow: 2px 0px 5px #03050a;
+    z-index: 10;
+    color: #fff;
+}
+
+#Profile .left-sidebar .inner {
+    height: 100%;
+}
+
+#Profile   .left-sidebar .inner .user-img-bg {
+    height: max(55%, 500px);
+    position: relative;
+    transition: all 0.5s;
+}
+
+#Profile   .left-sidebar .inner .user-img-bg .user-background {
+    position: absolute;
+    top: 0;
+    background: url("../../../../Images/Team/aritra.webp");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#Profile   .left-sidebar .inner .user-img-bg .user-background::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(23, 32, 61, 0.2) 0, #0a1022 95%);
+    height: 102%;
+    width: 100%;
+    content: "";
+}
+
+#Profile .left-sidebar .inner .user-profile {
+    height: max(45%,300px);
+    position: relative;
+    padding: 50px 5%;
+    overflow: auto;
+}
+
+#Profile   .left-sidebar .inner .user-profile .user-image {
+    background-image: url("../../../../Images/Team/aritra.webp");
+    width: 100px;
+    height : 100px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat : no-repeat;
+    border-radius: 50%;
+    transition: all 0.5s;
+    background-clip : content-box;
+    border : 6px solid rgba(255,255,255,0.1);
+    margin : 5% 0;
+}
+
+
+#Profile   .left-sidebar .inner .user-profile .user-info .user-name {
+    font-family: serif;
+    text-transform: uppercase;
+}
+
+#Profile   .left-sidebar .inner .user-profile .user-info .user-location {
+    position : relative;
+}
+
+#Profile   .left-sidebar .inner .user-profile .user-info .user-location .locationIconWrapper {
+    position: absolute;
+    left: 0;
+    padding: 0 5px 0;
+    margin: -2px 0 0;
+}
+
+
+
+#Profile .minimize {
+    width : min(20%,150px);
+}
+
+#Profile .minimize .inner .user-img-bg {
+    height : 100%;
+}
+
+#Profile .minimize .inner .user-profile{
+    height : 0;
+    visibility : hidden;
+}
+#Profile .minimize .inner .user-profile .user-image{
+    height : 0;
+}
+
+#Profile .toggle-button {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    border: 1px solid #1a233d;
+    width: 35px;
+    height: 150px;
+    text-align: center;
+    border-radius: 0 50% 50% 0;
+    cursor: pointer;
+    transform: translate(0, -50%);
+    box-shadow: 10px 5px 15px #03050a;
+    background: #0a1022;
+    z-index: 1;
+}
+
+#Profile .toggle-button:hover {
+    background: #1a233d;
+}
+
+@media(max-width : 768px) and (max-height : 800px){
+    #Profile .left-sidebar .toggle-button{
+        top : 100px ;
+    }
+}
+@media(max-height : 600px){
+    #Profile .left-sidebar .toggle-button {
+        top: 100px;
+    }
+}
+
+#Profile .main-content {
+    min-height : 900px;
+    padding-left: min(150px, 20%);
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+#Profile .lessopacity {
+    opacity: 0.25;
+}

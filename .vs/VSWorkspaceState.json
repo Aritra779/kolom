@@ -4,9 +4,13 @@
     "\\src",
     "\\src\\components",
     "\\src\\components\\Body",
-    "\\src\\components\\Body\\About",
-    "\\src\\components\\Body\\About\\Pen"
+    "\\src\\components\\Body\\User",
+    "\\src\\components\\Body\\User\\Profile",
+    "\\src\\components\\Body\\User\\Profile\\Update",
+    "\\src\\components\\Body\\User\\Profile\\Upload",
+    "\\src\\components\\Body\\User\\Profile\\Upload\\Forms",
+    "\\src\\Utils"
   ],
-  "SelectedNode": "\\src\\components\\Body\\About\\Pen\\Pen.js",
+  "SelectedNode": "\\src\\components\\Body\\User\\Profile\\Upload\\UploadContent.js",
   "PreviewInSolutionExplorer": false
 }

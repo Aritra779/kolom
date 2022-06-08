@@ -2,6 +2,12 @@
     overflow: hidden;
     background-image: linear-gradient(to top, #1d2140 0%, #e4e5ed 100%);
     border-bottom: 5px double #d02368;
+    padding-top : 75px;
+}
+@media(max-width : 300px) {
+    #TimeLine {
+        padding-top: 55px;
+    }
 }
 
 #TimeLine .background-img {

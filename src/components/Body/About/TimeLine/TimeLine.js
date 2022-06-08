@@ -1,7 +1,8 @@
-﻿import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import './TimeLine.css';
 import Icon from './Icon.js';
+import { Link } from 'react-router-dom';
 
 
 const TimeLine = () => {
@@ -20,7 +21,10 @@ const TimeLine = () => {
                         <div className="wave"></div>
                     </div>                    
                     <div className="row">
-                        <h3 className="vertical-timeline-element-title col-md-4">Edition 6</h3>
+                        <h3 className="vertical-timeline-element-title col-md-4" style={{zIndex : 5}}>
+                            <Link to ={'/archive#edtn6'} style = {{textDecoration : "none"}}>
+                            Edition 6</Link>
+                            </h3>
                         <div className="d-none d-md-block col-md-8">
                             <div className="background-img"></div>
                         </div>
@@ -38,7 +42,10 @@ const TimeLine = () => {
                         <div className="wave"></div>
                     </div>
                     <div className="row">
-                        <h3 className="vertical-timeline-element-title col-md-4">Edition 5</h3>
+                        <h3 className="vertical-timeline-element-title col-md-4" style={{zIndex : 5}}>
+                            <Link to ={"/archive/edtn5"} style = {{textDecoration : "none"}}>
+                            Edition 5</Link>
+                            </h3>
                         <div className="d-none d-md-block col-md-8">
                             <div className="background-img"></div>
                         </div>
@@ -56,7 +63,9 @@ const TimeLine = () => {
                         <div className="wave"></div>
                     </div>
                     <div className="row">
-                        <h3 className="vertical-timeline-element-title col-md-4">Edition 4</h3>
+                        <h3 className="vertical-timeline-element-title col-md-4" style={{zIndex : 5}}>
+                            <Link to={"/archive/edtn4"} style = {{textDecoration : "none"}}>Edition 4</Link>
+                        </h3>
                         <div className="d-none d-md-block col-md-8">
                             <div className="background-img"></div>
                         </div>
@@ -74,7 +83,9 @@ const TimeLine = () => {
                         <div className="wave"></div>
                     </div>
                     <div className="row">
-                        <h3 className="vertical-timeline-element-title col-md-4">Edition 3</h3>
+                    <h3 className="vertical-timeline-element-title col-md-4" style={{zIndex : 5}}>
+                            <Link to={"/archive/edtn3"} style = {{textDecoration : "none"}}>Edition 3</Link>
+                        </h3>
                         <div className="d-none d-md-block col-md-8">
                             <div className="background-img"></div>
                         </div>
@@ -92,7 +103,9 @@ const TimeLine = () => {
                         <div className="wave"></div>
                     </div>
                     <div className="row">
-                        <h3 className="vertical-timeline-element-title col-md-4">Edition 2</h3>
+                    <h3 className="vertical-timeline-element-title col-md-4" style={{zIndex : 5}}>
+                            <Link to={"/archive/edtn2"} style = {{textDecoration : "none"}}>Edition 2</Link>
+                        </h3>
                         <div className="d-none d-md-block col-md-8">
                             <div className="background-img"></div>
                         </div>
@@ -110,7 +123,9 @@ const TimeLine = () => {
                         <div className="wave"></div>
                     </div>
                     <div className="row">
-                        <h3 className="vertical-timeline-element-title col-md-4">Edition 1</h3>
+                    <h3 className="vertical-timeline-element-title col-md-4" style={{zIndex : 5}}>
+                            <Link to={"/archive/edtn1"} style = {{textDecoration : "none"}}>Edition 1</Link>
+                        </h3>
                         <div className="d-none d-md-block col-md-8">
                             <div className="background-img"></div>
                         </div>

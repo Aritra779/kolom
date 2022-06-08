@@ -1,10 +1,10 @@
-﻿import Effects from '../../Effects/Effects';
+import Effects from '../../Effects/Effects';
 import './Credits.css';
 const Credits = () => {
     return (
         <div id = "Credits" className="pt-5 pb-5">
             <Effects
-                id="Fifth"
+                id="About_Credits"
                 title="Credits"
                 color = 'white'
             />

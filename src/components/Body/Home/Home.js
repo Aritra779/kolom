@@ -1,99 +1,94 @@
-﻿import { useEffect} from 'react';
-import { Parallax } from "react-parallax";
+import { useEffect, lazy, Suspense} from 'react';
 import "./Home.css";
-import Particles from 'react-particles-js';
-import settings from './particlesjs-config.json';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Loading from '../../Loading/Loading';
 
 import img1 from "../../../Images/img-01.webp";
 import img2 from "../../../Images/img-02.webp";
 import img3 from "../../../Images/img-03.webp";
 import img4 from "../../../Images/img-04.webp";
+import { ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
 
-import Introduction from './Introduction';
-import ShortAbout from './ShortAbout';
-import ShortArchive from './ShortArchive';
-import LatestEdition from './LatestEdition';
+gsap.registerPlugin(ScrollTrigger);
+
+const Introduction = lazy(() => import('./Introduction'));
+const ShortAbout = lazy(() => import('./ShortAbout'));
+const ShortArchive = lazy(() => import('./ShortArchive'));
+const LatestEdition = lazy(() => import('./LatestEdition'));
 
 const Home = () => {
-
     useEffect(() => {
+
+        const navbarNav = document.getElementById("navbarNav");
+        const navButton = document.querySelector(".navbar-toggler");
+        if (navbarNav && navbarNav.classList.contains('show')) {
+            navButton.click();
+        }
+        const gsap_trig = ScrollTrigger.getAll();
+        for (let trig of gsap_trig) {
+            if (!trig['vars']['id'].startsWith("Home")) {
+                trig.kill();
+            }
+        }
+        
         window.scrollTo(0,0);
     }, []);
+
     const click = () => {
-        const word = document.querySelector("#ani h2");
+        const word = document.querySelector("#ani h1");
         word.classList.remove("animate");
         void word.offsetWidth;
         word.classList.add("animate");
     }
 
     return (
+        <ParallaxProvider>
         <div className="main" id="Home">
-            <Parallax bgImage={img1} strength={500}>
-                <div style={{ height: 500 }}>
-                    <div id = "ani">
-                        <h2 className="animate" id="title" onClick={click} lang = "bn"> আমাদের স্বাধীন কলম </h2>
+            <Suspense fallback={<Loading />}>
+                <ParallaxBanner
+                    layers={[{ image: img1, speed: -30 }]}
+                    className="aspect-[2/1]" style={{ height : 500 }}
+                >
+                    <div style={{ height: 500 }}>
+                        <div id="ani">
+                            <h1 className="animate" id="title" onClick={click} lang="bn"> আমাদের স্বাধীন কলম </h1>
+                        </div>
                     </div>
-                </div>
-            </Parallax>
-            <div id = "Intro" className="container-fluid intro" style={{ padding: 0 }}>
-                <Particles
-                    className="particles-js d-none d-sm-block"
-                    params={settings} 
-                />
-                <div style={{ backgroundColor: '#ab8b70' }}>
+                </ParallaxBanner>
+
+                <section id = "Intro" className="container-fluid intro" style={{ padding: 0 }}>
                     <Introduction />
-                </div>
-            </div>
-            <Parallax bgImage={img3} strength={200}>
-                <div style={{ height: 500 }}/>
-            </Parallax>
-            <div className="container-fluid intro" style={{ padding: 0 }}>
-                <Particles
-                    className="particles-js d-none d-sm-block"
-                    params={settings}        
-                />
-                <div style={{ backgroundColor: '#515356' }}>
-                <ShortAbout />
-                </div>
-            </div>
-            <Parallax bgImage={img2} strength={300}>
-                <div style={{ height: 500 }}/>
-            </Parallax>
-            <div className="container-fluid intro" id = "overyears">
-                <Particles
-                    className="particles-js d-none d-sm-block"
-                    params={settings} 
-                />
-                <div>
+                </section>
+            </Suspense>
+            <Suspense fallback={<Loading/>}>
+                <section className="container-fluid intro" style={{ padding: 0 }}>
+                    <ParallaxBanner
+                        layers={[{ image: img2, speed: 30 }]}
+                        className="aspect-[2/1]" style={{ height: 500 }}
+                    />
+                    <ShortAbout />
+                </section>
+            </Suspense>
+            <Suspense fallback={<Loading/>}>
+
+                <section className="container-fluid intro" id="overyears">
+                    <ParallaxBanner
+                        layers={[{ image: img3, speed: -30 }]}
+                        className="aspect-[2/1]" style={{ height: 500 }}
+                    />
                     <ShortArchive/>
-                </div>
+                </section>
+            </Suspense>
+            <Suspense fallback={<Loading />}>
+                <ParallaxBanner
+                    layers={[{ image: img4, speed: 30 }]}
+                    className="aspect-[2/1]" style={{ height: 500 }}
+                />
+                <LatestEdition />
+            </Suspense>
             </div>
-            <Parallax
-                bgImage={img4}
-                strength={200}
-                renderLayer={(percentage) => (
-                    <div>
-                        <div
-                            style={{
-                                position: "absolute",
-                                background: `rgba(255, 125, 0, ${percentage * 1})`,
-                                left: "50%",
-                                top: "50%",
-                                borderRadius: "50%",
-                                transform: "translate(-50%,-50%)",
-                                width: percentage * 500,
-                                height: percentage * 500
-                            }}
-                        />
-                    </div>
-                )}
-            >
-                <div style={{height: 500}}>
-                    <div className="overimg1">Edition 6</div>
-                </div>
-            </Parallax>
-            <LatestEdition />
-            </div>
+        </ParallaxProvider>
     );
 }
 

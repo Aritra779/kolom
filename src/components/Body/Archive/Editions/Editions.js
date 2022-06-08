@@ -1,4 +1,4 @@
-﻿import { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import './Editions.css';
 import Effects from '../../Effects/Effects';
 import Options from './Options';
@@ -12,7 +12,7 @@ const Editions = () => {
     
     const expand = (id) => {
         var optionsBox;
-        optionsBox = document.getElementById("third");
+        optionsBox = document.getElementById("Archive_Options");
         if (optionsBox) {
             childRef.current.hide();
         }
@@ -28,7 +28,7 @@ const Editions = () => {
         <div id = "Editions">
         <div className="container pt-5 pb-5">
             <Effects
-                id="second"
+                id="Archive_Editions"
                 title="Past Editions"
             />
             <div id="Edition" className="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5 mb-5 g-4">
@@ -37,7 +37,7 @@ const Editions = () => {
                         return (
                             <div key={date} id={`edtn${dates.indexOf(date) + 1}`} className="col">
                             <div className="card h-100">
-                                    <div className="bg-img d-none d-md-block" onClick={() => expand(dates.indexOf(date) + 1)}></div>
+                                    <div className="bg-img d-none d-sm-block" onClick={() => expand(dates.indexOf(date) + 1)} tabIndex = "0" onKeyDown={(e) => {e.key === 'Enter' && expand(dates.indexOf(date) + 1)}}></div>
                                 <div className="card-body">
                                         <h5 className="card-title text-decoration-underline" onClick={() => expand(dates.indexOf(date) + 1)}>Edition {dates.indexOf(date) + 1}</h5>
                                     <p className="card-text">{date}</p>

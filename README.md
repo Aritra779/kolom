@@ -4,5 +4,5 @@ This is a completely online audio-visual magazine. We took the initiative to lau
 
 Me personally being a computer science student and intersted in Web Development domain, I made the entire website all bt myself.
 
-The actual website can be found at http://kolom.netlify.app
+The actual website can be found at <a href = "http://kolom.netlify.app" target = "_blank"> http://kolom.netlify.app</a>
 

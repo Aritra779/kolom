@@ -1,11 +1,11 @@
-﻿import './Pen.css';
+import './Pen.css';
 import Effects from '../../Effects/Effects';
 
 const Pen = () => {
     return (
         <div id = "Pen">
             <Effects
-                id="AboutPen"
+                id="About_Pen"
                 title="Editors' Corner"
             />
             <div className="container pb-5" lang = "bn">
@@ -125,7 +125,7 @@ const Pen = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 reverse">
+                    {/*<div className="col-md-6 reverse">
                         <div className="wrap">
                             <div className="box">
                                 <i className="fas fa-quote-right fa1"></i>
@@ -141,7 +141,7 @@ const Pen = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>*/}
                     <div className="col-md-6">
                         <div className="wrap">
                             <div className="box">

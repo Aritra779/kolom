@@ -112,9 +112,6 @@
     display: none;
 }
 
-.comm {
-    
-}
 #Pen .box .text .quote {
     text-align: center;
     width: 100%;
@@ -130,7 +127,7 @@
 #Pen .box .text h3 {
     padding : 3% 3% 1%;
     margin : 0;
-    font-family: 'Lipishree Unicode';
+    font-family: Lipishree;
 }
 
 #Pen .box .text div p {

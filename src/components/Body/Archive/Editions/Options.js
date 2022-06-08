@@ -12,7 +12,7 @@ const links = [
     "https://drive.google.com/file/d/1q3DGIg8ORUEvxJsgmBHBJ_JtcLhqYCPw/view?usp=sharing"
 ];
 
-const Options = forwardRef(({content},ref) => {
+const Options = forwardRef(({content, Effect_id},ref) => {
     const [loadid, setLoadid] = useState(0);
     const [show, setShow] = useState(false);
 
@@ -36,7 +36,7 @@ const Options = forwardRef(({content},ref) => {
     return (
         <div>
             <Effects
-                id="third"
+                id={Effect_id ||"Archive_Options"}
                 title={`Edition ${content}`}
             />
             <div className="card bg-color mt-3 mb-5">
