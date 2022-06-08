@@ -34,11 +34,9 @@ const About = () => {
             }
         }
         const navbarNav = document.getElementById("navbarNav");
-        const nav = document.querySelector('.navbar');
+        const navButton = document.querySelector(".navbar-toggler");
         if (navbarNav && navbarNav.classList.contains('show')) {
-            navbarNav.classList.remove('show');
-            nav.classList.add('lessOpacity');
-            nav.classList.remove('moreOpacity');
+            navButton.click();
         }
     }, [pathname, hash, key]);
     return (

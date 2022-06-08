@@ -235,86 +235,35 @@
 #HomeIntroduction .paragraph{
     position : relative;
 }
-#HomeIntroduction .paragraph .bck-img, #HomeIntroduction .paragraph .ghost {
+#HomeIntroduction .paragraph .bck-img {
     height: 250px;
-    background-position : center center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     width: 40%;
     max-width: 200px;
-    
 }
-#HomeIntroduction .paragraph .ghost {
-    position: absolute;
 
-}
-#HomeIntroduction .paragraph .ghost-bck {
-    opacity: 0.1;
-}
-#HomeIntroduction .paragraph .invisi {
-    visibility : hidden;
-}
-#HomeIntroduction .paragraph .visi {
-    animation: slider 1s ease-in;
-}
-#HomeIntroduction .paragraph .hideme{
-    animation : hide 2s ease;
-}
-#HomeIntroduction .paragraph #edn1, #HomeIntroduction .paragraph #e1 {
+#HomeIntroduction .paragraph #edn1{
     float: left;
     margin-right: 5%;
-    background-image: url("../../../Materials/1424/01.webp");
 }
-#HomeIntroduction .paragraph #edn4, #HomeIntroduction .paragraph #e4 {
+#HomeIntroduction .paragraph #edn4 {
     float: right;
     margin-left: 5%;
-    background-image: url("../../../Materials/1427/001.webp");
 }
-#HomeIntroduction .paragraph #e4{
-    right : 0;
-}
-#HomeIntroduction .paragraph #edn6, #HomeIntroduction .paragraph #e6 {
+#HomeIntroduction .paragraph #edn6 {
     float: left;
     margin-right: 5%;
-    background-image: url("../../../Materials/1428_oct/001.webp");
 }
 
-@media (min-width : 700px){
-    #HomeIntroduction .paragraph #edn1, #HomeIntroduction .paragraph #edn6{
-        margin-right : 2%;
-    }
-    #HomeIntroduction .paragraph #edn4{
-        margin-left : 2%;
-    }
-}
-@media (max-width : 300px){
-    #HomeIntroduction .paragraph .bck-img, #HomeIntroduction .paragraph .ghost{
-        display : none;
-    }
+/*Edition Carosoul*/
+
+#HomeIntroduction .paragraph .swiper{
+    padding-top: 5%;
+    background-color: transparent;
+    height: 100%;
 }
 
-@keyframes slider{
-    0%{
-        transform : skewX(10deg) translateX(-100%);
-    }
-    60%{
-        transform : skewX(-5deg) translateX(0px);
-    }
-    65%{
-        transform : skewX(-5deg) translateX(20%);
-    }
-    100%{
-        transform : skewX(0deg);
-    }
-}
-
-@keyframes hide{
-    0%{
-        opacity : 1;
-    }
-    100%{
-        opacity : 0.1;
-    }
+#HomeIntroduction .paragraph .swiper-slide{
+    box-shadow: none;
 }
 
 /*ShortAbout*/

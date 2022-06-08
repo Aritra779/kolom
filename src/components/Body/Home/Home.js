@@ -21,11 +21,9 @@ const Home = () => {
     useEffect(() => {
 
         const navbarNav = document.getElementById("navbarNav");
-        const nav = document.querySelector('.navbar');
+        const navButton = document.querySelector(".navbar-toggler");
         if (navbarNav && navbarNav.classList.contains('show')) {
-            navbarNav.classList.remove('show');
-            nav.classList.add('lessOpacity');
-            nav.classList.remove('moreOpacity');
+            navButton.click();
         }
         const gsap_trig = ScrollTrigger.getAll();
         for (let trig of gsap_trig) {
@@ -33,11 +31,12 @@ const Home = () => {
                 trig.kill();
             }
         }
+        
         window.scrollTo(0,0);
     }, []);
 
     const click = () => {
-        const word = document.querySelector("#ani h2");
+        const word = document.querySelector("#ani h1");
         word.classList.remove("animate");
         void word.offsetWidth;
         word.classList.add("animate");
@@ -53,7 +52,7 @@ const Home = () => {
                 >
                     <div style={{ height: 500 }}>
                         <div id="ani">
-                            <h2 className="animate" id="title" onClick={click} lang="bn"> আমাদের স্বাধীন কলম </h2>
+                            <h1 className="animate" id="title" onClick={click} lang="bn"> আমাদের স্বাধীন কলম </h1>
                         </div>
                     </div>
                 </ParallaxBanner>

@@ -32,7 +32,10 @@
     background-image: url("../../../../Materials/1428_oct/001.webp");
 }
 
-
 .special-font ul li{
     font-family : Lipishree;
+}
+
+#accordion1 .accordion-item .accordion-body .list-group-item{
+    padding : 0.5rem 1rem;
 }

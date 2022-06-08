@@ -1,38 +1,34 @@
-
-import { useEffect } from "react";
+import Collapse from 'bootstrap/js/dist/collapse';
+import { useEffect, useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
 
+    const [opacity, setOpacity] = useState(false);
     useEffect(() => {
-        
-        const nav = document.querySelector('.navbar');
-        const button = document.querySelector('.navbar-toggler');
-        button.addEventListener('click', () => {
-            if (!button.classList.contains('collapsed')) {
-                nav.classList.add('moreOpacity');
-                nav.classList.remove('lessOpacity');
-            } else {
-                nav.classList.add('lessOpacity');
-                nav.classList.remove('moreOpacity');
-            }
-        });
-
+        const navDiv = document.getElementById('navbarNav');
         window.addEventListener('resize', () => {
-            if (window.innerWidth <= 768 && !button.classList.contains('collapsed')) {
-                nav.classList.add('moreOpacity');
-                nav.classList.remove('lessOpacity');
+            if (window.innerWidth <= 768 && navDiv && navDiv.classList.contains('show')) {
+                setOpacity(true);
             } else {
-                nav.classList.add('lessOpacity');
-                nav.classList.remove('moreOpacity');
+                setOpacity(false);
             }
         });
     },[]);
 
+    const toggleOpacity = () => {
+        const navButton = document.querySelector('.navbar-toggler')
+        if(navButton && navButton.classList.contains('collapsed')){
+            setOpacity(false);
+        }else{
+            setOpacity(true);
+        }
+    }
+    
     return (
         <>
-        <nav className="navbar navbar-expand-md fixed-top navbar-dark lessOpacity">
+        <nav className={`navbar navbar-expand-md fixed-top navbar-dark ${opacity ? 'moreOpacity' : 'lessOpacity'}`}>
             <div className="container-fluid">
                     <div className="logo-name">
 
@@ -48,6 +44,7 @@ const Navbar = () => {
                     aria-controls="navbarNav"
                     aria-expanded='false'
                     aria-label="Toggle navigation"
+                    onClick={() => toggleOpacity()}
                 >
                     <span className="navbar-toggler-icon"></span>
                 </button>

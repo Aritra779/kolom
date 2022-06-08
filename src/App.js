@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect, Suspense, lazy } from 'react';
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
@@ -22,12 +23,10 @@ function App() {
     }, [loc.pathname,navigate]);
 
     const navButtonController = () => {
-        const navButton = document.getElementById("navbarNav");
-        const nav = document.querySelector('.navbar');
-        if (window.innerWidth < 768 && navButton && navButton.classList.contains('show')) {
-            navButton.classList.remove('show');
-            nav.classList.add('lessOpacity');
-            nav.classList.remove('moreOpacity');
+        const navDiv = document.getElementById("navbarNav");
+        const navButton = document.querySelector('.navbar-toggler');
+        if (window.innerWidth < 768 && navDiv && navDiv.classList.contains('show')) {
+          navButton.click();
         }
     }
   return (
