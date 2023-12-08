@@ -4,6 +4,7 @@ metadata:
   name: kolom
   annotations:
     github.com/project-slug: Aritra779/kolom
+    backstage.io/techdocs-ref: value
 spec:
   type: other
   lifecycle: unknown
