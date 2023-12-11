@@ -5,6 +5,10 @@ metadata:
   annotations:
     github.com/project-slug: Aritra779/kolom
     backstage.io/techdocs-ref: value
+  links:
+    - url: http://kolom.netlify.app
+      title: Website
+      icon: dashboard
 spec:
   type: other
   lifecycle: unknown
